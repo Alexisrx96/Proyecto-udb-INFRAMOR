@@ -34,10 +34,10 @@
 
 -----------------TABLA: Departamentos-----------------
   
-   CREATE TABLE Departamentos
-   ( IdDepartamento char(8) NOT NULL,                                             --Id del departamento
+   CREATE TABLE LugaresNacimiento
+   ( IdLugarNacimiento char(8) NOT NULL,                                          --Id del lugar de nacimiento
      NombreDepartamento varchar(15),                                              --Nombre del departamento
-	 CONSTRAINT PK_IdDepartamento PRIMARY KEY (IdDepartamento),                   --Llave primaria (PK) de la tabla Departamentos
+	 CONSTRAINT PK_IdLugarNacimiento PRIMARY KEY (IdLugarNacimiento),             --Llave primaria (PK) de la tabla LugaresNacimientos
 	 CONSTRAINT U_NomDepartamento UNIQUE(NombreDepartamento) )                    --Restricción UNIQUE donde el nombre del departamento es valor único
 
 --------------------TABLA: Materias--------------------
@@ -73,14 +73,14 @@
 	 AñoIngreso date,                                                             --Año de ingreso de la alumna
 	 AñoEgreso date,                                                              --Año de egreso de la alumna
 	 FechaNacimiento date,                                                        --Fecha de nacimiento de la alumna
-	 IdDepartamento char(8),                                                      --Id del departamento de nacimiento de la alumna
+	 IdLugarNacimiento char(8),                                                   --Id del lugar de nacimiento de la alumna
 	 NombrePadre varchar(max),                                                    --Nombre completo del padre de la alumna
 	 NombreMadre varchar(max),                                                    --Nombre completo de la madre de la alumna
 	 CONSTRAINT PK_IdAlumna PRIMARY KEY (IdAlumna),                               --Llave primaria (PK) de la tabla DatosGeneralesAlumnas
 	 CONSTRAINT U_NIE UNIQUE(NIE),                                                --Restriccion UNIQUE donde el NIE de la alumna debe ser´valor único
-	 CONSTRAINT CK_AñoEgreso CHECK (AñoEgreso <= AñoIngreso),                     --Restriccion CHECK donde el año de egreso de la alumna debe ser mayor o igual al año de ingeso
-	 CONSTRAINT FK_DGA_IdDepartamento FOREIGN KEY (IdDepartamento)                --Llave foranea (FK) IdDepartamento (PK en tabla Departamentos)
-	 REFERENCES Departamentos(IdDepartamento) )
+	 CONSTRAINT CK_AñoEgreso CHECK (AñoEgreso >= AñoIngreso),                     --Restriccion CHECK donde el año de egreso de la alumna debe ser mayor o igual al año de ingeso
+	 CONSTRAINT FK_DGA_IdLugarNacimiento FOREIGN KEY (IdLugarNacimiento)          --Llave foranea (FK) IdLugarNacimiento (PK en tabla LugaresNacimientos)
+	 REFERENCES LugaresNacimiento(IdLugarNacimiento) )
 
 --------------TABLA: DatosPersonalesAlumnas--------------
 
@@ -116,7 +116,7 @@
    CREATE TABLE NotasAlumnas
    ( IdNotaAlumna char(8) NOT NULL,                                             --Id de la nota de la alumna
      IdGradoAlumna char(8),                                                     --Id de la alumna de cierto grado
-	 Nota decimal(2,2),                                                         --Nota de la alumna
+	 Nota decimal(4,2),                                                         --Nota de la alumna
 	 IdMateria char(8),                                                         --Id de la materia al que pertenece la nota
 	 Periodo varchar(10),                                                       --Peridodo al que pertenece la nota
 	 CONSTRAINT PK_IdNotaAlumna PRIMARY KEY (IdNotaAlumna),                     --Llave primaria (PK) de la tabla NotasAlumnas
@@ -131,7 +131,7 @@
    CREATE TABLE PromediosAlumnas
    ( IdPromedioAlumna char(8) NOT NULL,                                         --Id del promedio de la alumna
      IdGradoAlumna char(8),                                                     --Id de la alumna de cierto grado
-	 Promedio decimal(2,2),                                                     --Promedio del alumno
+	 Promedio decimal(4,2),                                                     --Promedio del alumno
 	 IdMateria char(8),                                                         --Id de la materia al que pertenece el promedio
 	 Peridodo varchar(10),                                                      --Periodo al que pertenece el promedio
 	 CONSTRAINT PK_IdPromedioAlumna PRIMARY KEY (IdPromedioAlumna),             --Llave primaria (PK) de la tabla PromediosAlumnas
@@ -146,8 +146,8 @@
    CREATE TABLE NotasFinales
    ( IdNotaFinal char(8) NOT NULL,                                              --Id de la nota final de la alumna
      IdGradoAlumna char(8),                                                     --Id de la alumna de cierto grado
-	 NotaFinal decimal(2,2),                                                    --Nota Final de la alumna en una materia
-	 NotaSirai decimal(2,2),                                                    --Nota Sirai de la alumna en una materia
+	 NotaFinal decimal(4,2),                                                    --Nota Final de la alumna en una materia
+	 NotaSirai decimal(4,2),                                                    --Nota Sirai de la alumna en una materia
 	 IdMateria char(8),                                                         --Id de la materia al que pertenece la nota final y la nota Sirai
 	 Año date,                                                                  --Año de registro de las notas
 	 CONSTRAINT PK_IdNotaFinal PRIMARY KEY (IdNotaFinal),                       --Llave primaria (PK) de la tabla NotasFinales
