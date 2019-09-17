@@ -32,7 +32,7 @@
      NombresUsuario varchar(25) NOT NULL,                                           --Almacena el primer y segundo nombre del usuario
 	 ApellidosUsuario varchar(25) NOT NULL,                                         --Almacena el primer y segundo apellido del usuario
 	 NomUsuario varchar(20) NOT NULL,                                               --Almacena el primer nombre y primer apellido que el usuario debe ingresar para entrar al programa
-	 Contrasenia varchar(20) NOT NULL,                                              --Almacena la contraseña que el usuario debe ingresar para entrar al programa
+	 Contrasenia varbinary(max) NOT NULL,                                              --Almacena la contraseña que el usuario debe ingresar para entrar al programa
 	 Rol bit NOT NULL,                                                              --Campo donde se asigna el rol del usuario ( 1 = Administrador )
 	 EstadoActivo bit NOT NULL,                                                     --Almacena si el usuario esta activo o no ( 1 = Activo / 0 = No Activo )
 	 CONSTRAINT PK_IdUsuario PRIMARY KEY (IdUsuario),                               --Llave primaria (PK) de la tabla Usuarios (Campo: IdUsuario)
