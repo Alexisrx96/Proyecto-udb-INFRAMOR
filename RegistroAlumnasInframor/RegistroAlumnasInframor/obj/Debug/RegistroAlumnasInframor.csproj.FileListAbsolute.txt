@@ -1,4 +1,3 @@
-D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csprojAssemblyReference.cache
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Properties.Resources.resources
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.UsuarioView.resources
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csproj.GenerateResource.cache
@@ -9,3 +8,5 @@ D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.exe
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.pdb
 D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.CrearUsuarioView.resources
+D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.NuevaAlumnaView.resources
+D:\Users\Irvin\source\repos\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.IniciarSesionView.resources

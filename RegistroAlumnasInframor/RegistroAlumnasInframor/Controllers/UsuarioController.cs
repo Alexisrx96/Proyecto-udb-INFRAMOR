@@ -33,5 +33,9 @@ namespace RegistroAlumnasInframor.Controllers
             crear.Mostrar();
             
         }
+        public void Mostrar()
+        {
+            vista.ShowDialog();
+        }
     }
 }

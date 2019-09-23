@@ -13,8 +13,8 @@ namespace RegistroAlumnasInframor.Models.Dto
         private string _Nombre;
         private string _Apellido;
         private int _NIE;
-        private DateTime _AnioIngreso;
-        private DateTime _AnioEgreso;
+        private int _AnioIngreso;
+        private int _AnioEgreso;
         private DateTime _FechaNacimiento;
         private string _IdDepartamnto;
         private string _NombrePadre;
@@ -24,8 +24,8 @@ namespace RegistroAlumnasInframor.Models.Dto
         public string Nombre { get => _Nombre; set => _Nombre = value; }
         public string Apellido { get => _Apellido; set => _Apellido = value; }
         public int NIE { get => _NIE; set => _NIE = value; }
-        public DateTime AnioIngreso { get => _AnioIngreso; set => _AnioIngreso = value; }
-        public DateTime AnioEgreso { get => _AnioEgreso; set => _AnioEgreso = value; }
+        public int AnioIngreso { get => _AnioIngreso; set => _AnioIngreso = value; }
+        public int AnioEgreso { get => _AnioEgreso; set => _AnioEgreso = value; }
         public DateTime FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
         public string IdDepartamnto { get => _IdDepartamnto; set => _IdDepartamnto = value; }
         public string NombrePadre { get => _NombrePadre; set => _NombrePadre = value; }

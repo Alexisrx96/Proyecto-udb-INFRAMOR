@@ -34,7 +34,7 @@
             this.lbl_id = new System.Windows.Forms.Label();
             this.lbl_rol = new System.Windows.Forms.Label();
             this.lbl_Contrasenia = new System.Windows.Forms.Label();
-            this.txt_id = new System.Windows.Forms.TextBox();
+            this.txt_IdUsuarios = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.txt_nomUsuario = new System.Windows.Forms.TextBox();
@@ -97,12 +97,12 @@
             this.lbl_Contrasenia.TabIndex = 0;
             this.lbl_Contrasenia.Text = "Contrasenia";
             // 
-            // txt_id
+            // txt_IdUsuarios
             // 
-            this.txt_id.Location = new System.Drawing.Point(170, 72);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(100, 22);
-            this.txt_id.TabIndex = 1;
+            this.txt_IdUsuarios.Location = new System.Drawing.Point(170, 72);
+            this.txt_IdUsuarios.Name = "txt_IdUsuarios";
+            this.txt_IdUsuarios.Size = new System.Drawing.Size(100, 22);
+            this.txt_IdUsuarios.TabIndex = 1;
             // 
             // txt_nombre
             // 
@@ -159,7 +159,7 @@
             this.Controls.Add(this.txt_nomUsuario);
             this.Controls.Add(this.txt_apellido);
             this.Controls.Add(this.txt_nombre);
-            this.Controls.Add(this.txt_id);
+            this.Controls.Add(this.txt_IdUsuarios);
             this.Controls.Add(this.lbl_nomUsuario);
             this.Controls.Add(this.lbl_Contrasenia);
             this.Controls.Add(this.lbl_apellido);
@@ -182,7 +182,7 @@
         public System.Windows.Forms.Label lbl_id;
         public System.Windows.Forms.Label lbl_rol;
         public System.Windows.Forms.Label lbl_Contrasenia;
-        public System.Windows.Forms.TextBox txt_id;
+        public System.Windows.Forms.TextBox txt_IdUsuarios;
         public System.Windows.Forms.TextBox txt_nombre;
         public System.Windows.Forms.TextBox txt_apellido;
         public System.Windows.Forms.TextBox txt_nomUsuario;

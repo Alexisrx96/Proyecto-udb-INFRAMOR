@@ -11,17 +11,12 @@ namespace RegistroAlumnasInframor.Models.Dao
 {
     class UsuarioDao:DbContext
     {
-        SqlDataReader leerFilas;
-        SqlCommand cmd = new SqlCommand();
         public List<Usuario> VerRegistros(string condicion)
         {
-            cmd.Connection = conexion;
-            cmd.CommandText = "PC_BuscarUsuario";
+            cmd.Connection = this.AbrirConexion();
+            cmd.CommandText = "SP_BuscarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@condicion", condicion);
-
-            conexion.Open();
-
             leerFilas = cmd.ExecuteReader();
             List<Usuario> listaUsuarios = new List<Usuario>();
             while (leerFilas.Read())
@@ -29,30 +24,48 @@ namespace RegistroAlumnasInframor.Models.Dao
                 listaUsuarios.Add
                     (new Usuario
                     {
-                        Id = leerFilas.GetInt32(0),
+                        IdUsuarios = leerFilas.GetString(0),
                         Nombre = leerFilas.GetString(1),
                         Apellido = leerFilas.GetString(2),
-                        Contrasenia = leerFilas.GetString(3),
-                        Rol = leerFilas.GetString(4),
-                        Estado = leerFilas.GetString(5)
-                    });
+                        NombUsuario = leerFilas.GetString(3),
+                        Contrasenia = leerFilas.GetString(4),
+                        Rol = leerFilas.GetString(5),
+                        Estado = leerFilas.GetString(6)
+                    }) ;
             }
             leerFilas.Close();
-            conexion.Close();
+            this.CerrarConexion();
             return listaUsuarios;
         }
-        public void Insert(int pId, string pNombre, string pApellido,string pNomUsuario, string pContrasenia, string pRol, string pEstado)
+        public bool ValidarInicio(string pNomUsuarios, string pContrasenia)
         {
             cmd.Connection = conexion;
-            cmd.CommandText = "PC_InsertarUsuario";
+            cmd.CommandText = "SP_ComprobarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@Id", pId);
-            cmd.Parameters.AddWithValue("@Nombre", pNombre);
-            cmd.Parameters.AddWithValue("@Apellido", pApellido);
-            cmd.Parameters.AddWithValue("@NomUsuario", pNomUsuario);
-            cmd.Parameters.AddWithValue("@Contraseña ", pContrasenia);
-            cmd.Parameters.AddWithValue("@Rol", pRol);
-            cmd.Parameters.AddWithValue("@Estado", pEstado);
+            cmd.Parameters.AddWithValue("@NomUsuario", pNomUsuarios);
+            cmd.Parameters.AddWithValue("@Contrasenia", pContrasenia);
+            leerFilas = cmd.ExecuteReader();
+            if (leerFilas.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void Insert(string pIdUsuario, string pNombre, string pApellido,string pNombUsuario, string pContrasenia, string pRol, string pEstado)
+        {
+            cmd.Connection = conexion;
+            cmd.CommandText = "SP_InsertarUsuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@IdUsuarios", pIdUsuario);
+            cmd.Parameters.AddWithValue("@NombresUsuarios", pNombre);
+            cmd.Parameters.AddWithValue("@ApellidosUsuarios", pApellido);
+            cmd.Parameters.AddWithValue("@NomUsuarios", pNombUsuario);
+            cmd.Parameters.AddWithValue("@Contrasenias", pContrasenia);
+            cmd.Parameters.AddWithValue("@Roles", pRol);
+            cmd.Parameters.AddWithValue("@Estados", pEstado);
             conexion.Open();
             cmd.ExecuteNonQuery();
             conexion.Close();

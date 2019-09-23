@@ -24,13 +24,13 @@ namespace RegistroAlumnasInframor.Controllers
             try
             {
                 UsuarioDao db = new UsuarioDao();
-                db.Insert(int.Parse(vista.txt_id.Text),
+                db.Insert(vista.txt_IdUsuarios.Text,
                             vista.txt_nombre.Text,
                             vista.txt_apellido.Text,
                             vista.txt_nomUsuario.Text,
                             vista.txt_contrasenia.Text,
                             vista.txt_rol.Text,
-                            "Activo");
+                            "Activo") ;
                 MessageBox.Show("Se realizó con éxito");
             }
             catch (Exception ex)
@@ -40,7 +40,7 @@ namespace RegistroAlumnasInframor.Controllers
         }
         public void Mostrar()
         {
-            vista.Show();
+            vista.ShowDialog();
         }
     }
 }

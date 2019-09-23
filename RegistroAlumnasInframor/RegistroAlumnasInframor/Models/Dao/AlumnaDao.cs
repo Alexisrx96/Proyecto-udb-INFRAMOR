@@ -11,8 +11,6 @@ namespace RegistroAlumnasInframor.Models.Dao
 {
     class AlumnaDao:DbContext
     {
-        SqlDataReader leerFilas;
-        SqlCommand cmd = new SqlCommand();
         public List<Alumna> VerRegistros(string condicion)
         {
             cmd.Connection = conexion;
@@ -32,8 +30,8 @@ namespace RegistroAlumnasInframor.Models.Dao
                     Nombre = leerFilas.GetString(1),
                     Apellido = leerFilas.GetString(2),
                     NIE = leerFilas.GetInt32(3),
-                    AnioIngreso = leerFilas.GetDateTime(4),
-                    AnioEgreso = leerFilas.GetDateTime(5),
+                    AnioIngreso = leerFilas.GetInt32(4),
+                    AnioEgreso = leerFilas.GetInt32(5),
                     FechaNacimiento = leerFilas.GetDateTime(6),
                     IdDepartamnto = leerFilas.GetString(7),
                     NombrePadre = leerFilas.GetString(8),

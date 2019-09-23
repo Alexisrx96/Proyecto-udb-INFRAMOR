@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CrearUsuarioController.cs" />
+    <Compile Include="Controllers\IniciarSesionController.cs" />
+    <Compile Include="Controllers\NuevaAlumnaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Models\Dao\AlumnaDao.cs" />
     <Compile Include="Models\Dao\DbContext.cs" />
+    <Compile Include="Models\Dao\GradosDao.cs" />
+    <Compile Include="Models\Dao\LugaresNacimientoDao.cs" />
+    <Compile Include="Models\Dao\MateriasDao.cs" />
+    <Compile Include="Models\Dao\NotasDao.cs" />
+    <Compile Include="Models\Dao\TiposNotasDao.cs" />
     <Compile Include="Models\Dao\UsuarioDao.cs" />
     <Compile Include="Models\Dto\Alumna.cs" />
+    <Compile Include="Models\Dto\Grados.cs" />
+    <Compile Include="Models\Dto\LugaresNacimiento.cs" />
+    <Compile Include="Models\Dto\Materias.cs" />
+    <Compile Include="Models\Dto\Notas.cs" />
+    <Compile Include="Models\Dto\TiposNotas.cs" />
     <Compile Include="Models\Dto\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +72,24 @@
     </Compile>
     <Compile Include="Views\CrearUsuarioView.Designer.cs">
       <DependentUpon>CrearUsuarioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IniciarSesionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IniciarSesionView.Designer.cs">
+      <DependentUpon>IniciarSesionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MenuView.Designer.cs">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NuevaAlumnaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NuevaAlumnaView.Designer.cs">
+      <DependentUpon>NuevaAlumnaView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UsuarioView.cs">
       <SubType>Form</SubType>
@@ -78,6 +108,12 @@
     </Compile>
     <EmbeddedResource Include="Views\CrearUsuarioView.resx">
       <DependentUpon>CrearUsuarioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IniciarSesionView.resx">
+      <DependentUpon>IniciarSesionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NuevaAlumnaView.resx">
+      <DependentUpon>NuevaAlumnaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UsuarioView.resx">
       <DependentUpon>UsuarioView.cs</DependentUpon>

@@ -17,7 +17,7 @@ namespace RegistroAlumnasInframor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UsuarioView());
+            Application.Run(new NuevaAlumnaView());
         }
     }
 }
