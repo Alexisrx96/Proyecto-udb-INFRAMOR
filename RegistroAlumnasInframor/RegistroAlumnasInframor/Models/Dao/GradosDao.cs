@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +12,12 @@ namespace RegistroAlumnasInframor.Models.Dao
     {
         public DataTable ListaGrados()
         {
+            command = new SqlCommand();
             DataTable grados = new DataTable();
-            cmd.Connection = this.AbrirConexion();
-            cmd.CommandText = "SP_ListarGrados";
-            cmd.CommandType = CommandType.StoredProcedure;
-            leerFilas = cmd.ExecuteReader();
+            command.Connection = this.AbrirConexion();
+            command.CommandText = "SP_ListarGrados";
+            command.CommandType = CommandType.StoredProcedure;
+            leerFilas = command.ExecuteReader();
             grados.Load(leerFilas);
             leerFilas.Close();
             this.CerrarConexion();

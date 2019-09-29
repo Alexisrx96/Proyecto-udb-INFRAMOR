@@ -11,66 +11,116 @@ namespace RegistroAlumnasInframor.Models.Dao
 {
     class UsuarioDao:DbContext
     {
-        public List<Usuario> VerRegistros(string condicion)
+        DataTable usuarios = new DataTable();
+        public DataTable VerUsuarios(string condicion)
         {
-            cmd.Connection = this.AbrirConexion();
-            cmd.CommandText = "SP_BuscarUsuario";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@condicion", condicion);
-            leerFilas = cmd.ExecuteReader();
-            List<Usuario> listaUsuarios = new List<Usuario>();
-            while (leerFilas.Read())
-            {
-                listaUsuarios.Add
-                    (new Usuario
-                    {
-                        IdUsuarios = leerFilas.GetString(0),
-                        Nombre = leerFilas.GetString(1),
-                        Apellido = leerFilas.GetString(2),
-                        NombUsuario = leerFilas.GetString(3),
-                        Contrasenia = leerFilas.GetString(4),
-                        Rol = leerFilas.GetString(5),
-                        Estado = leerFilas.GetString(6)
-                    }) ;
-            }
+            command = new SqlCommand();
+            command.Connection = this.AbrirConexion();
+            command.CommandText = "SP_BuscarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@condicion", condicion);
+            leerFilas = command.ExecuteReader();
+            usuarios.Load(leerFilas);
             leerFilas.Close();
             this.CerrarConexion();
-            return listaUsuarios;
+            return usuarios;
         }
-        public bool ValidarInicio(string pNomUsuarios, string pContrasenia)
+        public bool HayUsuarios()
         {
-            cmd.Connection = conexion;
-            cmd.CommandText = "SP_ComprobarUsuario";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@NomUsuario", pNomUsuarios);
-            cmd.Parameters.AddWithValue("@Contrasenia", pContrasenia);
-            leerFilas = cmd.ExecuteReader();
+            bool hayUsuarios;
+            command = new SqlCommand();
+            command.Connection = this.AbrirConexion();
+            command.CommandText = "SP_BuscarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@condicion", "");
+            leerFilas = command.ExecuteReader();
             if (leerFilas.HasRows)
             {
-                return true;
+                leerFilas.Close();
+                this.CerrarConexion();
+                hayUsuarios= true;
             }
             else
             {
-                return false;
+                leerFilas.Close();
+                this.CerrarConexion();
+                hayUsuarios = false;
             }
+            return hayUsuarios;
         }
-        public void Insert(string pIdUsuario, string pNombre, string pApellido,string pNombUsuario, string pContrasenia, string pRol, string pEstado)
+        public bool ValidarInicio(string pNomUsuarios, string pContrasenia)
         {
-            cmd.Connection = conexion;
-            cmd.CommandText = "SP_InsertarUsuario";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@IdUsuarios", pIdUsuario);
-            cmd.Parameters.AddWithValue("@NombresUsuarios", pNombre);
-            cmd.Parameters.AddWithValue("@ApellidosUsuarios", pApellido);
-            cmd.Parameters.AddWithValue("@NomUsuarios", pNombUsuario);
-            cmd.Parameters.AddWithValue("@Contrasenias", pContrasenia);
-            cmd.Parameters.AddWithValue("@Roles", pRol);
-            cmd.Parameters.AddWithValue("@Estados", pEstado);
+            bool validado;
+            command = new SqlCommand();
+            command.Connection = this.AbrirConexion(); ;
+            command.CommandText = "SP_ComprobarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@NomUsuario", pNomUsuarios);
+            command.Parameters.AddWithValue("@Contrasenia", pContrasenia);
+            leerFilas = command.ExecuteReader();
+            if (leerFilas.HasRows)
+            {
+                leerFilas.Close();
+                this.CerrarConexion();
+                validado = true;
+            }
+            else
+            {
+                leerFilas.Close();
+                this.CerrarConexion();
+                validado = false;
+            }
+            return validado; 
+        }
+        public void Insert( string pNombre, string pApellido,string pNombUsuario, string pContrasenia, int pEstado)
+        {
+            command = new SqlCommand();
+            command.Connection = conexion;
+            command.CommandText = "SP_InsertarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@NombresUsuario", pNombre);
+            command.Parameters.AddWithValue("@ApellidosUsuario", pApellido);
+            command.Parameters.AddWithValue("@NomUsuario", pNombUsuario);
+            command.Parameters.AddWithValue("@Contrasenia", pContrasenia);
+            command.Parameters.AddWithValue("@Estado", pEstado);
             conexion.Open();
-            cmd.ExecuteNonQuery();
+            command.ExecuteNonQuery();
             conexion.Close();
         }
-        public void Edit() { }
-        public void Delete() { }
+        public string UsuarioSeleccionado(int indice, string condicion)
+        {
+            string nomUsuario;
+            usuarios = VerUsuarios(condicion);
+            DataRow usuarioSerleccionado = usuarios.Rows[indice];
+            nomUsuario = usuarioSerleccionado[2].ToString();
+            return nomUsuario;
+            
+        }
+        public void EditarUsuario(string pNombre,string pApellido, string pNomUsuario,int pEstado,string pcCondicion)
+        {
+            command = new SqlCommand();
+            command.Connection = conexion;
+            command.CommandText = "SP_EditarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@NombresUsuario", pNombre);
+            command.Parameters.AddWithValue("@ApellidosUsuario", pApellido);
+            command.Parameters.AddWithValue("@NomUsuario", pNomUsuario);
+            command.Parameters.AddWithValue("@Estado", pEstado);
+            command.Parameters.AddWithValue("@Condicion", pcCondicion);
+            conexion.Open();
+            command.ExecuteNonQuery();
+            conexion.Close();
+        }
+        public void Delete(string pNomUsuario)
+        {
+            command = new SqlCommand();
+            command.Connection = conexion;
+            command.CommandText = "SP_EliminarUsuario";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@NomUsuario", pNomUsuario);
+            conexion.Open();
+            command.ExecuteNonQuery();
+            conexion.Close();
+        }
     }
 }

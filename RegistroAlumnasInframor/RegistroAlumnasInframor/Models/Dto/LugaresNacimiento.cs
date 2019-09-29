@@ -11,7 +11,7 @@ namespace RegistroAlumnasInframor.Models.Dto
         private int _IdLugaresNacimiento;
         private string _Nombre;
 
-        public int IdLugaresNacimiento1 { get => _IdLugaresNacimiento; set => _IdLugaresNacimiento = value; }
+        public int IdLugaresNacimiento { get => _IdLugaresNacimiento; set => _IdLugaresNacimiento = value; }
         public string Nombre { get => _Nombre; set => _Nombre = value; }
     }
 }
