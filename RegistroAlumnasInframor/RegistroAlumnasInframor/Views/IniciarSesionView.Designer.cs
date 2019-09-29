@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 124);
+            this.label1.Location = new System.Drawing.Point(40, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 188);
+            this.label2.Location = new System.Drawing.Point(40, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 1;
@@ -56,33 +56,38 @@
             // 
             // txt_NomUsuario
             // 
-            this.txt_NomUsuario.Location = new System.Drawing.Point(243, 119);
+            this.txt_NomUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_NomUsuario.Location = new System.Drawing.Point(175, 47);
             this.txt_NomUsuario.Name = "txt_NomUsuario";
-            this.txt_NomUsuario.Size = new System.Drawing.Size(212, 22);
+            this.txt_NomUsuario.Size = new System.Drawing.Size(201, 22);
             this.txt_NomUsuario.TabIndex = 2;
             // 
             // txt_Contrasenia
             // 
-            this.txt_Contrasenia.Location = new System.Drawing.Point(243, 188);
+            this.txt_Contrasenia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Contrasenia.Location = new System.Drawing.Point(175, 116);
             this.txt_Contrasenia.Name = "txt_Contrasenia";
             this.txt_Contrasenia.PasswordChar = '*';
-            this.txt_Contrasenia.Size = new System.Drawing.Size(212, 22);
+            this.txt_Contrasenia.Size = new System.Drawing.Size(201, 22);
             this.txt_Contrasenia.TabIndex = 3;
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(243, 280);
+            this.btn_Aceptar.Location = new System.Drawing.Point(105, 185);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(75, 25);
+            this.btn_Aceptar.Size = new System.Drawing.Size(64, 25);
             this.btn_Aceptar.TabIndex = 4;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             // 
             // btn_Cerrar
             // 
-            this.btn_Cerrar.Location = new System.Drawing.Point(380, 280);
+            this.btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Cerrar.Location = new System.Drawing.Point(258, 185);
             this.btn_Cerrar.Name = "btn_Cerrar";
-            this.btn_Cerrar.Size = new System.Drawing.Size(75, 25);
+            this.btn_Cerrar.Size = new System.Drawing.Size(64, 25);
             this.btn_Cerrar.TabIndex = 5;
             this.btn_Cerrar.Text = "Cerrar";
             this.btn_Cerrar.UseVisualStyleBackColor = true;
@@ -91,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(402, 286);
             this.Controls.Add(this.btn_Cerrar);
             this.Controls.Add(this.btn_Aceptar);
             this.Controls.Add(this.txt_Contrasenia);
@@ -99,6 +104,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "IniciarSesionView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IniciarSesionView";
             this.ResumeLayout(false);
             this.PerformLayout();

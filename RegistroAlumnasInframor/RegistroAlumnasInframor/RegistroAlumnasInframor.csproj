@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BienvenidaController.cs" />
     <Compile Include="Controllers\CrearUsuarioController.cs" />
     <Compile Include="Controllers\IniciarSesionController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ModificarUsuarioController.cs" />
     <Compile Include="Controllers\NuevaAlumnaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Models\Dao\AlumnaDao.cs" />
@@ -67,11 +70,23 @@
     <Compile Include="Models\Dto\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BienvenidaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BienvenidaView.Designer.cs">
+      <DependentUpon>BienvenidaView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CrearUsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\CrearUsuarioView.Designer.cs">
       <DependentUpon>CrearUsuarioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreditosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreditosView.Designer.cs">
+      <DependentUpon>CreditosView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IniciarSesionView.cs">
       <SubType>Form</SubType>
@@ -84,6 +99,12 @@
     </Compile>
     <Compile Include="Views\MenuView.Designer.cs">
       <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModificarUsuarioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ModificarUsuarioView.Designer.cs">
+      <DependentUpon>ModificarUsuarioView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\NuevaAlumnaView.cs">
       <SubType>Form</SubType>
@@ -106,11 +127,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\BienvenidaView.resx">
+      <DependentUpon>BienvenidaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CrearUsuarioView.resx">
       <DependentUpon>CrearUsuarioView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreditosView.resx">
+      <DependentUpon>CreditosView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\IniciarSesionView.resx">
       <DependentUpon>IniciarSesionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MenuView.resx">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ModificarUsuarioView.resx">
+      <DependentUpon>ModificarUsuarioView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NuevaAlumnaView.resx">
       <DependentUpon>NuevaAlumnaView.cs</DependentUpon>

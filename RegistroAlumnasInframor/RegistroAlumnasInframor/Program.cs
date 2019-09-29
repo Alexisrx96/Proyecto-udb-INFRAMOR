@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegistroAlumnasInframor.Models.Dao;
 
 namespace RegistroAlumnasInframor
 {
@@ -15,9 +16,17 @@ namespace RegistroAlumnasInframor
         [STAThread]
         static void Main()
         {
+            UsuarioDao usuario = new UsuarioDao();
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NuevaAlumnaView());
+            Application.SetCompatibleTextRenderingDefault(true);
+            if (usuario.HayUsuarios())
+            {
+                Application.Run(new UsuarioView());
+            }
+            else
+            {
+                Application.Run(new CrearUsuarioView());
+            }
         }
     }
 }
