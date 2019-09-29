@@ -31,19 +31,24 @@
             this.dgv_tablaUsuarios = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_tablaUsuarios
             // 
+            this.dgv_tablaUsuarios.AllowUserToAddRows = false;
+            this.dgv_tablaUsuarios.AllowUserToDeleteRows = false;
             this.dgv_tablaUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_tablaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_tablaUsuarios.Location = new System.Drawing.Point(12, 103);
             this.dgv_tablaUsuarios.Name = "dgv_tablaUsuarios";
+            this.dgv_tablaUsuarios.ReadOnly = true;
             this.dgv_tablaUsuarios.RowHeadersWidth = 51;
             this.dgv_tablaUsuarios.RowTemplate.Height = 24;
+            this.dgv_tablaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_tablaUsuarios.Size = new System.Drawing.Size(776, 335);
             this.dgv_tablaUsuarios.TabIndex = 0;
             // 
@@ -63,11 +68,21 @@
             this.btn_buscar.Text = "Crear Nuevo Usuario";
             this.btn_buscar.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Buscar por Nombre o Nombre de usuario";
+            // 
             // UsuarioView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dgv_tablaUsuarios);
@@ -84,5 +99,6 @@
         public System.Windows.Forms.DataGridView dgv_tablaUsuarios;
         public System.Windows.Forms.TextBox txt_buscar;
         public System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Label label1;
     }
 }

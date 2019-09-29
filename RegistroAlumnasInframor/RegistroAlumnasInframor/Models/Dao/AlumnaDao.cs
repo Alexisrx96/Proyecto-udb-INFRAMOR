@@ -13,14 +13,15 @@ namespace RegistroAlumnasInframor.Models.Dao
     {
         public List<Alumna> VerRegistros(string condicion)
         {
-            cmd.Connection = conexion;
-            cmd.CommandText = "ProcedimientoAlmacenado";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@condicion",condicion);
+            command = new SqlCommand();
+            command.Connection = this.AbrirConexion();
+            command.CommandText = "ProcedimientoAlmacenado";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@condicion",condicion);
 
             conexion.Open();
 
-            leerFilas = cmd.ExecuteReader();
+            leerFilas = command.ExecuteReader();
             List<Alumna> listaAlumnas = new List<Alumna>();
             while (leerFilas.Read())
             {

@@ -12,11 +12,13 @@ namespace RegistroAlumnasInframor.Models.Dao
     {
         protected SqlConnection conexion;
         protected SqlDataReader leerFilas;
-        protected SqlCommand cmd;
+        protected SqlCommand command;
+
         public DbContext()
         {
-            conexion = new SqlConnection("Server=MSI ;DataBase=InstitutoBD ;Integrated Security=True ");
-            cmd = new SqlCommand();
+            string server = "localhost";
+            string dataBase = "InstitutoBD";
+            conexion = new SqlConnection("Server=" + server + ";DataBase="+ dataBase + ";Integrated Security=True");
         }
         protected SqlConnection AbrirConexion()
         {

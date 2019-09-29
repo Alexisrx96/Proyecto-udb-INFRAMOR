@@ -21,22 +21,31 @@ namespace RegistroAlumnasInframor.Controllers
         }
         private void UsuarioInsert(object sender, EventArgs e)
         {
-            try
+            if (vista.txt_confirmar.Text==vista.txt_contrasenia.Text)
             {
-                UsuarioDao db = new UsuarioDao();
-                db.Insert(vista.txt_IdUsuarios.Text,
-                            vista.txt_nombre.Text,
-                            vista.txt_apellido.Text,
-                            vista.txt_nomUsuario.Text,
-                            vista.txt_contrasenia.Text,
-                            vista.txt_rol.Text,
-                            "Activo") ;
-                MessageBox.Show("Se realizó con éxito");
+                try
+                {
+                    
+                    UsuarioDao db = new UsuarioDao();
+                    db.Insert(vista.txt_nombre.Text,
+                                vista.txt_apellido.Text,
+                                vista.txt_nomUsuario.Text,
+                                vista.txt_contrasenia.Text,
+                                1);
+                    MessageBox.Show("Se realizó con éxito");
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se realizó con exito " + ex);
+                }
+
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("No se realizó con exito " + ex);
+                MessageBox.Show("La contraseña no coincide");
             }
+           
         }
         public void Mostrar()
         {

@@ -8,6 +8,8 @@ namespace RegistroAlumnasInframor.Models.Dto
 {
     class Alumna
     {
+
+        //
         //ATRIBUTOS
         private string _IdAlumna;
         private string _Nombre;
@@ -30,5 +32,6 @@ namespace RegistroAlumnasInframor.Models.Dto
         public string IdDepartamnto { get => _IdDepartamnto; set => _IdDepartamnto = value; }
         public string NombrePadre { get => _NombrePadre; set => _NombrePadre = value; }
         public string NombreMadre { get => _NombreMadre; set => _NombreMadre = value; }
+        
     }
 }

@@ -13,11 +13,12 @@ namespace RegistroAlumnasInframor.Models.Dao
     {
         public DataTable ListaMaterias()
         {
+            command = new SqlCommand();
             DataTable materias = new DataTable();
-            cmd.Connection = this.AbrirConexion();
-            cmd.CommandText = "SP_ListarMaterias";
-            cmd.CommandType = CommandType.StoredProcedure;
-            leerFilas = cmd.ExecuteReader();
+            command.Connection = this.AbrirConexion();
+            command.CommandText = "SP_ListarMaterias";
+            command.CommandType = CommandType.StoredProcedure;
+            leerFilas = command.ExecuteReader();
             materias.Load(leerFilas);
             leerFilas.Close();
             this.CerrarConexion();
