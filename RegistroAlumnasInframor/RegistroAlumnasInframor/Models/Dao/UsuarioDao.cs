@@ -124,7 +124,7 @@ namespace RegistroAlumnasInframor.Models.Dao
             command.ExecuteNonQuery();
             conexion.Close();
         }
-        public void Delete(string pNomUsuario)
+        public void EliminarUsuario(string pNomUsuario)
         {
             command = new SqlCommand();
             command.Connection = conexion;

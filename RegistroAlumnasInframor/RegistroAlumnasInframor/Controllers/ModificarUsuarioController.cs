@@ -25,10 +25,11 @@ namespace RegistroAlumnasInframor.Controllers
             vista = view;
             usuarioSeleccionado = usuario;
             //Se le asigna la función LlenarCampos al evento Load del formulario
-            vista.Load += LlenarCampos;
+            vista.Load += new EventHandler(LlenarCampos);
             //Se le asigna la función GuardarCambios al evento Click del botón btn_modificar
-            vista.btn_modificar.Click += GuardarCambios;
-
+            vista.btn_modificar.Click += new EventHandler(GuardarCambios);
+            vista.btn_calcelar.Click += new EventHandler(Cancelar);
+            vista.btn_borrar.Click +=new EventHandler(EliminarUsuario);
         }
         private void LlenarCampos(object sender, EventArgs e)
         {
@@ -39,6 +40,26 @@ namespace RegistroAlumnasInframor.Controllers
             vista.txt_nomUsuario.Text = usuario.Rows[0][2].ToString();
             //Si el valor de la columna es 1 se convierte a verdadero y si es 0 se cnvierte a falso
             vista.check_activo.Checked = (bool)usuario.Rows[0][3];
+        }
+        private void EliminarUsuario(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Se eliminará el usuario: " + usuarioSeleccionado + "\n¿Desea continuar?",
+                                     "Crear usuario",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                try
+                {
+                    usuarioDao.EliminarUsuario(usuarioSeleccionado);
+                    vista.Close();
+                    MessageBox.Show("Se elimió el usuario con éxito");
+                    vista.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se realizó con exito " + ex);
+                }
+            }
         }
         private void GuardarCambios(object sender, EventArgs e)
         {

@@ -22,7 +22,6 @@ D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInfr
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.exe
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\RegistroAlumnasInframor.exe.config
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\RegistroAlumnasInframor.exe
-D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csprojAssemblyReference.cache
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.MenuView.resources
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.CreditosView.resources
 D:\Users\Irvin\Source\Repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.ModificarUsuarioView.resources

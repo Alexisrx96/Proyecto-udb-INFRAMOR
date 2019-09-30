@@ -16,18 +16,9 @@ namespace RegistroAlumnasInframor
         [STAThread]
         static void Main()
         {
-            UsuarioDao usuario = new UsuarioDao();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            //Comprueba si hay usuarios creados para mostrar la primera pantalla
-            if (usuario.HayUsuarios())
-            {
-                Application.Run(new BienvenidaView());
-            }
-            else
-            {
-                Application.Run(new CrearUsuarioView());
-            }
+            Application.Run(new BienvenidaView());
         }
     }
 }

@@ -38,6 +38,8 @@
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.check_activo = new System.Windows.Forms.CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_borrar = new System.Windows.Forms.Button();
+            this.btn_calcelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,11 +117,31 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btn_borrar
+            // 
+            this.btn_borrar.Location = new System.Drawing.Point(228, 242);
+            this.btn_borrar.Name = "btn_borrar";
+            this.btn_borrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_borrar.TabIndex = 6;
+            this.btn_borrar.Text = "Borrar";
+            this.btn_borrar.UseVisualStyleBackColor = true;
+            // 
+            // btn_calcelar
+            // 
+            this.btn_calcelar.Location = new System.Drawing.Point(364, 242);
+            this.btn_calcelar.Name = "btn_calcelar";
+            this.btn_calcelar.Size = new System.Drawing.Size(75, 23);
+            this.btn_calcelar.TabIndex = 7;
+            this.btn_calcelar.Text = "Cancelar";
+            this.btn_calcelar.UseVisualStyleBackColor = true;
+            // 
             // ModificarUsuarioView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_calcelar);
+            this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.check_activo);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.txt_nomUsuario);
@@ -147,5 +169,7 @@
         public System.Windows.Forms.Label lbl_nombre;
         public System.Windows.Forms.CheckBox check_activo;
         public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button btn_calcelar;
+        public System.Windows.Forms.Button btn_borrar;
     }
 }

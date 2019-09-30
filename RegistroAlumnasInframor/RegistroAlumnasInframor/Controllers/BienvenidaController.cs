@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RegistroAlumnasInframor.Views;
 using System.Windows.Forms;
+using RegistroAlumnasInframor.Models.Dao;
 
 namespace RegistroAlumnasInframor.Controllers
 {
@@ -25,10 +26,21 @@ namespace RegistroAlumnasInframor.Controllers
         private void Cerrar(object sender,EventArgs e)
         {
             vista.timer1.Tick -= Cerrar;
-            IniciarSesionView iniciarSesion = new IniciarSesionView();
-            vista.Hide();
-            iniciarSesion.ShowDialog();
-            vista.Close();
+            UsuarioDao usuario = new UsuarioDao();
+            if (usuario.HayUsuarios())
+            {
+                IniciarSesionView iniciarSesion = new IniciarSesionView();
+                vista.Hide();
+                iniciarSesion.ShowDialog();
+                vista.Close();
+            }
+            else
+            {
+                CrearUsuarioView crearUsuario = new CrearUsuarioView();
+                vista.Hide();
+                crearUsuario.ShowDialog();
+                vista.Close();
+            }
         }
     }
 }
