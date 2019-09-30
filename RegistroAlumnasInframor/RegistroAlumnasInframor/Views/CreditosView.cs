@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegistroAlumnasInframor.Controllers;
 
 namespace RegistroAlumnasInframor.Views
 {
@@ -15,6 +16,7 @@ namespace RegistroAlumnasInframor.Views
         public CreditosView()
         {
             InitializeComponent();
+            CreditosController ctrl = new CreditosController(this);
         }
     }
 }

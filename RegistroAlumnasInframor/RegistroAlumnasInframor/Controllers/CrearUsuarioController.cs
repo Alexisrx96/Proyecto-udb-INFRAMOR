@@ -31,20 +31,36 @@ namespace RegistroAlumnasInframor.Controllers
                 validado = false;
                 vista.errorProvider1.SetError(vista.txt_nombre,"El campo no puede estar vacío");
             }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_nombre, "");
+            }
             if (string.IsNullOrWhiteSpace(vista.txt_apellido.Text))
             {
                 validado = false;
                 vista.errorProvider1.SetError(vista.txt_apellido, "El campo no puede estar vacío");
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_apellido, "");
             }
             if (string.IsNullOrWhiteSpace(vista.txt_nomUsuario.Text))
             {
                 validado = false;
                 vista.errorProvider1.SetError(vista.txt_nomUsuario, "El campo no puede estar vacío");
             }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_nomUsuario, "");
+            }
             if (string.IsNullOrWhiteSpace(vista.txt_contrasenia.Text))
             {
                 validado = false;
                 vista.errorProvider1.SetError(vista.txt_contrasenia, "El campo no puede estar vacío");
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_contrasenia, "");
             }
             if (string.IsNullOrWhiteSpace(vista.txt_confirmar.Text))
             {
@@ -55,6 +71,10 @@ namespace RegistroAlumnasInframor.Controllers
             {
                 validado = false;
                 vista.errorProvider1.SetError(vista.txt_confirmar, "La contraseña no coincide");
+            }
+            else
+            {
+                vista.errorProvider1.SetError(vista.txt_confirmar, "");
             }
             return validado;
         }

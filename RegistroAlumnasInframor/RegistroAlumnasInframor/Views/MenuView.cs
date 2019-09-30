@@ -17,7 +17,7 @@ namespace RegistroAlumnasInframor.Views
         {
             InitializeComponent();
             MenuController ctrl = new MenuController(this);
-            
         }
+
     }
 }

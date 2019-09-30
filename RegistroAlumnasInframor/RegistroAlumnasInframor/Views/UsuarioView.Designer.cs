@@ -34,6 +34,7 @@
             this.btn_buscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_regresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -86,16 +87,27 @@
             this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider1.ContainerControl = this;
             // 
+            // btn_regresar
+            // 
+            this.btn_regresar.Location = new System.Drawing.Point(602, 69);
+            this.btn_regresar.Name = "btn_regresar";
+            this.btn_regresar.Size = new System.Drawing.Size(158, 27);
+            this.btn_regresar.TabIndex = 4;
+            this.btn_regresar.Text = "Regresar";
+            this.btn_regresar.UseVisualStyleBackColor = true;
+            // 
             // UsuarioView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dgv_tablaUsuarios);
             this.Name = "UsuarioView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsuarioView";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -111,5 +123,6 @@
         public System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button btn_regresar;
     }
 }

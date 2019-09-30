@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\BienvenidaController.cs" />
     <Compile Include="Controllers\CrearUsuarioController.cs" />
+    <Compile Include="Controllers\CreditosController.cs" />
     <Compile Include="Controllers\IniciarSesionController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ModificarUsuarioController.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\BienvenidaView.resx">
       <DependentUpon>BienvenidaView.cs</DependentUpon>
@@ -164,6 +166,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\aaa.jpg" />
+    <Content Include="Resources\círculo-300x300.png" />
+    <Content Include="Resources\escudo.jpg" />
+    <Content Include="Resources\FONDO1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

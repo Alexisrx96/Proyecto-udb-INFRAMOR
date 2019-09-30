@@ -119,7 +119,7 @@
             // 
             // btn_borrar
             // 
-            this.btn_borrar.Location = new System.Drawing.Point(228, 242);
+            this.btn_borrar.Location = new System.Drawing.Point(203, 242);
             this.btn_borrar.Name = "btn_borrar";
             this.btn_borrar.Size = new System.Drawing.Size(75, 23);
             this.btn_borrar.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             // btn_calcelar
             // 
-            this.btn_calcelar.Location = new System.Drawing.Point(364, 242);
+            this.btn_calcelar.Location = new System.Drawing.Point(309, 242);
             this.btn_calcelar.Name = "btn_calcelar";
             this.btn_calcelar.Size = new System.Drawing.Size(75, 23);
             this.btn_calcelar.TabIndex = 7;
@@ -151,6 +151,7 @@
             this.Controls.Add(this.lbl_apellido);
             this.Controls.Add(this.lbl_nombre);
             this.Name = "ModificarUsuarioView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarUsuarioView";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

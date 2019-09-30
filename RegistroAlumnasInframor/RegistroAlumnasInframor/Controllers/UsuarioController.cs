@@ -22,10 +22,17 @@ namespace RegistroAlumnasInframor.Controllers
             vista.btn_buscar.Click += new EventHandler(CrearUsuario);
             vista.txt_buscar.TextChanged += new EventHandler(UsuarioList);
             vista.dgv_tablaUsuarios.DoubleClick += new EventHandler(EditarUsuario);
-            //El evento cuando recive la atencion(al ser activado ya sea dando clic sobre el formulario o por cerrar un Diálogo)
-            vista.Activated += new EventHandler(UsuarioList);
             vista.txt_buscar.KeyPress += new KeyPressEventHandler(BuscarKeyPress);
+            vista.btn_regresar.Click += new EventHandler(Regresar);
         }
+        private void Regresar(object sender, EventArgs e)
+        {
+            MenuView menu = new MenuView();
+            vista.Hide();
+            menu.ShowDialog();
+            vista.Close();
+        }
+
         private void Cancelar(object sender, EventArgs e)
         {
             vista.Close();

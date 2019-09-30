@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,16 +39,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txt_idAlumna = new System.Windows.Forms.TextBox();
+            this.txt_nie = new System.Windows.Forms.TextBox();
+            this.txt_nombres = new System.Windows.Forms.TextBox();
+            this.txt_apelidos = new System.Windows.Forms.TextBox();
+            this.txt_anioIngreso = new System.Windows.Forms.TextBox();
+            this.txt_anioEgreso = new System.Windows.Forms.TextBox();
+            this.dtp_nacimiento = new System.Windows.Forms.DateTimePicker();
             this.cmb_LugarNacimiento = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_nombrePadre = new System.Windows.Forms.TextBox();
+            this.txt_nombreMadre = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_registrar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,54 +145,54 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "NIE";
             // 
-            // textBox1
+            // txt_idAlumna
             // 
-            this.textBox1.Location = new System.Drawing.Point(224, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.txt_idAlumna.Location = new System.Drawing.Point(224, 24);
+            this.txt_idAlumna.Name = "txt_idAlumna";
+            this.txt_idAlumna.Size = new System.Drawing.Size(100, 22);
+            this.txt_idAlumna.TabIndex = 1;
             // 
-            // textBox2
+            // txt_nie
             // 
-            this.textBox2.Location = new System.Drawing.Point(224, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
+            this.txt_nie.Location = new System.Drawing.Point(224, 64);
+            this.txt_nie.Name = "txt_nie";
+            this.txt_nie.Size = new System.Drawing.Size(100, 22);
+            this.txt_nie.TabIndex = 2;
             // 
-            // textBox3
+            // txt_nombres
             // 
-            this.textBox3.Location = new System.Drawing.Point(224, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
+            this.txt_nombres.Location = new System.Drawing.Point(224, 102);
+            this.txt_nombres.Name = "txt_nombres";
+            this.txt_nombres.Size = new System.Drawing.Size(100, 22);
+            this.txt_nombres.TabIndex = 3;
             // 
-            // textBox4
+            // txt_apelidos
             // 
-            this.textBox4.Location = new System.Drawing.Point(224, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 4;
+            this.txt_apelidos.Location = new System.Drawing.Point(224, 132);
+            this.txt_apelidos.Name = "txt_apelidos";
+            this.txt_apelidos.Size = new System.Drawing.Size(100, 22);
+            this.txt_apelidos.TabIndex = 4;
             // 
-            // textBox5
+            // txt_anioIngreso
             // 
-            this.textBox5.Location = new System.Drawing.Point(224, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 5;
+            this.txt_anioIngreso.Location = new System.Drawing.Point(224, 161);
+            this.txt_anioIngreso.Name = "txt_anioIngreso";
+            this.txt_anioIngreso.Size = new System.Drawing.Size(100, 22);
+            this.txt_anioIngreso.TabIndex = 5;
             // 
-            // textBox6
+            // txt_anioEgreso
             // 
-            this.textBox6.Location = new System.Drawing.Point(224, 201);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 6;
+            this.txt_anioEgreso.Location = new System.Drawing.Point(224, 201);
+            this.txt_anioEgreso.Name = "txt_anioEgreso";
+            this.txt_anioEgreso.Size = new System.Drawing.Size(100, 22);
+            this.txt_anioEgreso.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtp_nacimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(224, 237);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(113, 22);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtp_nacimiento.Location = new System.Drawing.Point(224, 237);
+            this.dtp_nacimiento.Name = "dtp_nacimiento";
+            this.dtp_nacimiento.Size = new System.Drawing.Size(113, 22);
+            this.dtp_nacimiento.TabIndex = 7;
             // 
             // cmb_LugarNacimiento
             // 
@@ -197,35 +202,59 @@
             this.cmb_LugarNacimiento.Size = new System.Drawing.Size(121, 24);
             this.cmb_LugarNacimiento.TabIndex = 8;
             // 
-            // textBox7
+            // txt_nombrePadre
             // 
-            this.textBox7.Location = new System.Drawing.Point(224, 309);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 9;
+            this.txt_nombrePadre.Location = new System.Drawing.Point(224, 309);
+            this.txt_nombrePadre.Name = "txt_nombrePadre";
+            this.txt_nombrePadre.Size = new System.Drawing.Size(100, 22);
+            this.txt_nombrePadre.TabIndex = 9;
             // 
-            // textBox8
+            // txt_nombreMadre
             // 
-            this.textBox8.Location = new System.Drawing.Point(224, 349);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
-            this.textBox8.TabIndex = 10;
+            this.txt_nombreMadre.Location = new System.Drawing.Point(224, 349);
+            this.txt_nombreMadre.Name = "txt_nombreMadre";
+            this.txt_nombreMadre.Size = new System.Drawing.Size(100, 22);
+            this.txt_nombreMadre.TabIndex = 10;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btn_registrar
+            // 
+            this.btn_registrar.Location = new System.Drawing.Point(351, 387);
+            this.btn_registrar.Name = "btn_registrar";
+            this.btn_registrar.Size = new System.Drawing.Size(76, 31);
+            this.btn_registrar.TabIndex = 11;
+            this.btn_registrar.Text = "Registrar";
+            this.btn_registrar.UseVisualStyleBackColor = true;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Location = new System.Drawing.Point(433, 387);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(76, 31);
+            this.btn_cancelar.TabIndex = 12;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
             // 
             // NuevaAlumnaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.btn_registrar);
+            this.Controls.Add(this.txt_nombreMadre);
+            this.Controls.Add(this.txt_nombrePadre);
             this.Controls.Add(this.cmb_LugarNacimiento);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtp_nacimiento);
+            this.Controls.Add(this.txt_anioEgreso);
+            this.Controls.Add(this.txt_anioIngreso);
+            this.Controls.Add(this.txt_apelidos);
+            this.Controls.Add(this.txt_nombres);
+            this.Controls.Add(this.txt_nie);
+            this.Controls.Add(this.txt_idAlumna);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -237,7 +266,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NuevaAlumnaView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NuevaAlumna";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,15 +286,18 @@
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.TextBox txt_idAlumna;
+        public System.Windows.Forms.TextBox txt_nie;
+        public System.Windows.Forms.TextBox txt_nombres;
+        public System.Windows.Forms.TextBox txt_apelidos;
+        public System.Windows.Forms.TextBox txt_anioIngreso;
+        public System.Windows.Forms.TextBox txt_anioEgreso;
+        public System.Windows.Forms.DateTimePicker dtp_nacimiento;
         public System.Windows.Forms.ComboBox cmb_LugarNacimiento;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox txt_nombrePadre;
+        public System.Windows.Forms.TextBox txt_nombreMadre;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button btn_cancelar;
+        public System.Windows.Forms.Button btn_registrar;
     }
 }
