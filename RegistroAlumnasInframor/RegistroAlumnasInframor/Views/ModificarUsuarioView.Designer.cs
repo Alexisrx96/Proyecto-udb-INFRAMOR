@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.txt_nomUsuario = new System.Windows.Forms.TextBox();
             this.txt_apellido = new System.Windows.Forms.TextBox();
@@ -36,11 +37,13 @@
             this.lbl_apellido = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.check_activo = new System.Windows.Forms.CheckBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_modificar
             // 
-            this.btn_modificar.Location = new System.Drawing.Point(344, 249);
+            this.btn_modificar.Location = new System.Drawing.Point(104, 242);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(75, 23);
             this.btn_modificar.TabIndex = 5;
@@ -50,6 +53,7 @@
             // txt_nomUsuario
             // 
             this.txt_nomUsuario.Location = new System.Drawing.Point(203, 166);
+            this.txt_nomUsuario.MaxLength = 20;
             this.txt_nomUsuario.Name = "txt_nomUsuario";
             this.txt_nomUsuario.Size = new System.Drawing.Size(100, 22);
             this.txt_nomUsuario.TabIndex = 3;
@@ -57,6 +61,7 @@
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(203, 138);
+            this.txt_apellido.MaxLength = 25;
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(100, 22);
             this.txt_apellido.TabIndex = 2;
@@ -64,6 +69,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(203, 111);
+            this.txt_nombre.MaxLength = 25;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(100, 22);
             this.txt_nombre.TabIndex = 1;
@@ -98,12 +104,16 @@
             // check_activo
             // 
             this.check_activo.AutoSize = true;
-            this.check_activo.Location = new System.Drawing.Point(237, 203);
+            this.check_activo.Location = new System.Drawing.Point(203, 194);
             this.check_activo.Name = "check_activo";
             this.check_activo.Size = new System.Drawing.Size(68, 21);
             this.check_activo.TabIndex = 4;
             this.check_activo.Text = "Activo";
             this.check_activo.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // ModificarUsuarioView
             // 
@@ -120,6 +130,7 @@
             this.Controls.Add(this.lbl_nombre);
             this.Name = "ModificarUsuarioView";
             this.Text = "ModificarUsuarioView";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +146,6 @@
         public System.Windows.Forms.Label lbl_apellido;
         public System.Windows.Forms.Label lbl_nombre;
         public System.Windows.Forms.CheckBox check_activo;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

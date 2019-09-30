@@ -16,6 +16,19 @@ namespace RegistroAlumnasInframor.Models.Dao
         {
             command = new SqlCommand();
             command.Connection = this.AbrirConexion();
+            command.CommandText = "SP_BuscarUsuarios";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@condicion", condicion);
+            leerFilas = command.ExecuteReader();
+            usuarios.Load(leerFilas);
+            leerFilas.Close();
+            this.CerrarConexion();
+            return usuarios;
+        }
+        public DataTable VerUsuarioSeleccionado(string condicion)
+        {
+            command = new SqlCommand();
+            command.Connection = this.AbrirConexion();
             command.CommandText = "SP_BuscarUsuario";
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@condicion", condicion);
@@ -30,7 +43,7 @@ namespace RegistroAlumnasInframor.Models.Dao
             bool hayUsuarios;
             command = new SqlCommand();
             command.Connection = this.AbrirConexion();
-            command.CommandText = "SP_BuscarUsuario";
+            command.CommandText = "SP_BuscarUsuarios";
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@condicion", "");
             leerFilas = command.ExecuteReader();

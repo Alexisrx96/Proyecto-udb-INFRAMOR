@@ -19,9 +19,10 @@ namespace RegistroAlumnasInframor
             UsuarioDao usuario = new UsuarioDao();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
+            //Comprueba si hay usuarios creados para mostrar la primera pantalla
             if (usuario.HayUsuarios())
             {
-                Application.Run(new UsuarioView());
+                Application.Run(new BienvenidaView());
             }
             else
             {

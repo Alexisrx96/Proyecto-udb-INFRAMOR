@@ -80,6 +80,7 @@
             this.Controls.Add(this.btn_Usuarios);
             this.Controls.Add(this.btn_Alumnas);
             this.Name = "MenuView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuView";
             this.ResumeLayout(false);
 

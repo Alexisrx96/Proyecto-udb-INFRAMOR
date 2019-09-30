@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgv_tablaUsuarios = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_tablaUsuarios
@@ -55,13 +58,14 @@
             // txt_buscar
             // 
             this.txt_buscar.Location = new System.Drawing.Point(52, 71);
+            this.txt_buscar.MaxLength = 20;
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(327, 22);
             this.txt_buscar.TabIndex = 1;
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(385, 68);
+            this.btn_buscar.Location = new System.Drawing.Point(438, 68);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(158, 29);
             this.btn_buscar.TabIndex = 2;
@@ -73,9 +77,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(49, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 17);
+            this.label1.Size = new System.Drawing.Size(202, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Buscar por Nombre o Nombre de usuario";
+            this.label1.Text = "Buscar por Nombre de usuario";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
             // 
             // UsuarioView
             // 
@@ -89,6 +98,7 @@
             this.Name = "UsuarioView";
             this.Text = "UsuarioView";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,5 +110,6 @@
         public System.Windows.Forms.TextBox txt_buscar;
         public System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

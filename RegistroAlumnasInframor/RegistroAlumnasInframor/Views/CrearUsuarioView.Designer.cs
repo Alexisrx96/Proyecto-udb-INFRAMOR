@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.lbl_apellido = new System.Windows.Forms.Label();
             this.lbl_nomUsuario = new System.Windows.Forms.Label();
@@ -39,6 +40,9 @@
             this.btn_crear = new System.Windows.Forms.Button();
             this.lbl_confirmar = new System.Windows.Forms.Label();
             this.txt_confirmar = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_nombre
@@ -80,6 +84,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(217, 107);
+            this.txt_nombre.MaxLength = 25;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(100, 22);
             this.txt_nombre.TabIndex = 1;
@@ -87,6 +92,7 @@
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(217, 134);
+            this.txt_apellido.MaxLength = 25;
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(100, 22);
             this.txt_apellido.TabIndex = 2;
@@ -94,6 +100,7 @@
             // txt_nomUsuario
             // 
             this.txt_nomUsuario.Location = new System.Drawing.Point(217, 170);
+            this.txt_nomUsuario.MaxLength = 20;
             this.txt_nomUsuario.Name = "txt_nomUsuario";
             this.txt_nomUsuario.Size = new System.Drawing.Size(100, 22);
             this.txt_nomUsuario.TabIndex = 3;
@@ -108,7 +115,7 @@
             // 
             // btn_crear
             // 
-            this.btn_crear.Location = new System.Drawing.Point(370, 268);
+            this.btn_crear.Location = new System.Drawing.Point(71, 278);
             this.btn_crear.Name = "btn_crear";
             this.btn_crear.Size = new System.Drawing.Size(75, 23);
             this.btn_crear.TabIndex = 6;
@@ -128,14 +135,29 @@
             // 
             this.txt_confirmar.Location = new System.Drawing.Point(217, 232);
             this.txt_confirmar.Name = "txt_confirmar";
+            this.txt_confirmar.PasswordChar = '*';
             this.txt_confirmar.Size = new System.Drawing.Size(100, 22);
             this.txt_confirmar.TabIndex = 5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Location = new System.Drawing.Point(217, 278);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancelar.TabIndex = 7;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
             // 
             // CrearUsuarioView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_crear);
             this.Controls.Add(this.txt_confirmar);
             this.Controls.Add(this.txt_contrasenia);
@@ -148,7 +170,9 @@
             this.Controls.Add(this.lbl_confirmar);
             this.Controls.Add(this.lbl_nombre);
             this.Name = "CrearUsuarioView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearUsuarioView";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +191,7 @@
         public System.Windows.Forms.TextBox txt_contrasenia;
         public System.Windows.Forms.Label lbl_confirmar;
         public System.Windows.Forms.TextBox txt_confirmar;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button btn_cancelar;
     }
 }

@@ -17,20 +17,78 @@ namespace RegistroAlumnasInframor.Controllers
         {
             vista = view;
             vista.btn_Aceptar.Click += new EventHandler(Login);
+            vista.txt_NomUsuario.KeyPress += new KeyPressEventHandler(UsuarioKeyPress);
+        }
+        private bool CamposVacios()
+        {
+            bool validado = true;
+            if (string.IsNullOrWhiteSpace(vista.txt_NomUsuario.Text))
+            {
+                validado = false;
+                vista.errorProvider1.SetError(vista.txt_NomUsuario, "El campo no puede estar vacío");
+            }
+            if (string.IsNullOrWhiteSpace(vista.txt_Contrasenia.Text))
+            {
+                validado = false;
+                vista.errorProvider1.SetError(vista.txt_Contrasenia, "El campo no puede estar vacío");
+            }
+            return validado;
         }
         private void Login(object sender, EventArgs e)
         {
-            UsuarioDao usuario = new UsuarioDao();
-            if (usuario.ValidarInicio(vista.txt_NomUsuario.Text,vista.txt_Contrasenia.Text))
+            if (CamposVacios())
             {
-                vista.Hide();
-                MenuView menu = new MenuView();
-                menu.ShowDialog();
-                vista.Close();
+                UsuarioDao usuario = new UsuarioDao();
+                if (usuario.ValidarInicio(vista.txt_NomUsuario.Text, vista.txt_Contrasenia.Text))
+                {
+                    vista.Hide();
+                    MenuView menu = new MenuView();
+                    menu.ShowDialog();
+                    vista.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Contraseña incorrecta");
+                }
+            }
+        }
+        protected void UsuarioKeyPress(object sender, KeyPressEventArgs e)
+        {
+            bool validado;
+            //condicion para solo números
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }//para backspace
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }//para que admita tecla de espacio
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }
+            else if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }
+            //si no cumple nada de lo anterior que no lo deje pasar
+            else
+            {
+                e.Handled = true;
+                validado = false;
+            }
+            if (validado)
+            {
+                vista.errorProvider1.SetError(vista.txt_NomUsuario, "");
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña incorrecta");
+                vista.errorProvider1.SetError(vista.txt_NomUsuario, "Solo se admiten números y letras");
             }
         }
     }
