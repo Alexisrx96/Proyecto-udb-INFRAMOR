@@ -26,13 +26,22 @@ AS
 SELECT * FROM TiposNotas
 ORDER BY TipoNota ASC
 GO
---Buscar Usuarios por Nombre o NombUsuario
-CREATE PROCEDURE SP_BuscarUsuario
+--Buscar Usuarios por NombUsuario
+CREATE PROCEDURE SP_BuscarUsuarios
     @condicion varchar(20)
 AS
 BEGIN
     SELECT NombresUsuario,ApellidosUsuario,NomUsuario,EstadoActivo from Usuarios 
 	WHERE NomUsuario  LIKE @condicion+'%'
+END
+GO
+--Buscar a un usuario en específico por NombUsuario
+CREATE PROCEDURE SP_BuscarUsuario
+    @condicion varchar(20)
+AS
+BEGIN
+    SELECT NombresUsuario,ApellidosUsuario,NomUsuario,EstadoActivo from Usuarios 
+	WHERE NomUsuario  = @condicion
 END
 GO
 CREATE PROCEDURE SP_InsertarUsuario
