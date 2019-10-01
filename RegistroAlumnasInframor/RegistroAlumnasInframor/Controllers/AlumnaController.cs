@@ -44,15 +44,14 @@ namespace RegistroAlumnasInframor.Controllers
             vista.Hide();
             crear.ShowDialog();
             vista.Close();
-
         }
         private void EditarUsuario(object sender, EventArgs e)
         {
             DataGridViewRow selected = vista.dgv_tablaAlumnas.SelectedRows[0];
             int indice = vista.dgv_tablaAlumnas.Rows.IndexOf(selected);
-            UsuarioDao usuario = new UsuarioDao();
-            string usuarioSeleccionado = usuario.UsuarioSeleccionado(indice,vista.txt_buscar.Text);
-            ModificarUsuarioView modificarUsuario = new ModificarUsuarioView(usuarioSeleccionado);
+            AlumnaDao alumna = new AlumnaDao();
+            string usuarioSeleccionado = alumna.AlumnaSeleccionada(indice,vista.txt_buscar.Text);
+            ModificarAlumnaView modificarUsuario = new ModificarAlumnaView(usuarioSeleccionado);
             modificarUsuario.ShowDialog();
 
         }

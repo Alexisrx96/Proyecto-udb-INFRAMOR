@@ -28,3 +28,4 @@ D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInfr
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.pdb
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csprojAssemblyReference.cache
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.AlumnaView.resources
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.ModificarAlumnaView.resources

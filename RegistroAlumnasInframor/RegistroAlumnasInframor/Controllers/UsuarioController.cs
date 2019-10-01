@@ -46,7 +46,6 @@ namespace RegistroAlumnasInframor.Controllers
             vista.Hide();
             crear.ShowDialog();
             vista.Close();
-
         }
         private void EditarUsuario(object sender, EventArgs e)
         {
@@ -54,7 +53,7 @@ namespace RegistroAlumnasInframor.Controllers
             int indice = vista.dgv_tablaUsuarios.Rows.IndexOf(selected);
             UsuarioDao usuario = new UsuarioDao();
             string usuarioSeleccionado = usuario.UsuarioSeleccionado(indice,vista.txt_buscar.Text);
-            ModificarUsuarioView modificarUsuario = new ModificarUsuarioView(usuarioSeleccionado);
+            ModificarAlumnaView modificarUsuario = new ModificarAlumnaView(usuarioSeleccionado);
             vista.Hide();
             modificarUsuario.ShowDialog();
             vista.Close();

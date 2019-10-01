@@ -62,41 +62,7 @@ namespace RegistroAlumnasInframor.Controllers
                 }
             }
         }
-        private void Editar(object sender, EventArgs e)
-        {
-            if (CamposVacios())
-            {
-                if (MessageBox.Show("Se registrará a la alumna: " + vista.txt_idAlumna.Text + "\n¿Desea continuar?",
-                                       "Crear usuario",
-                                       MessageBoxButtons.YesNo,
-                                       MessageBoxIcon.Information) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        AlumnaDao nuevaAlumna = new AlumnaDao();
-                        //Crea un registro en la base de datos mediante AlumnaDao
-                        nuevaAlumna.InsertarAlumna(vista.txt_idAlumna.Text,
-                                    vista.txt_nombres.Text,
-                                    vista.txt_apelidos.Text,
-                                    int.Parse(vista.txt_nie.Text),
-                                    int.Parse(vista.txt_anioIngreso.Text),
-                                    int.Parse(vista.txt_anioEgreso.Text),
-                                    vista.dtp_nacimiento.Value,
-                                    (int)vista.cmb_LugarNacimiento.SelectedValue,
-                                    vista.txt_nombrePadre.Text,
-                                    vista.txt_nombreMadre.Text);
-                        MessageBox.Show("Se registró la alumna con éxito");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("No se realizó con exito...\n" + ex,
-                            "Error",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
+        
         private bool CamposVacios()
         {
             bool validado = true;

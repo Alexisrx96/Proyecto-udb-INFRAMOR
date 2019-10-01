@@ -25,6 +25,15 @@ namespace RegistroAlumnasInframor.Models.Dao
             this.CerrarConexion();
             return alumnas;
         }
+        public string AlumnaSeleccionada(int indice, string condicion)
+        {
+            string nomUsuario;
+            alumnas = VerAlumnas(condicion);
+            DataRow usuarioSerleccionado = alumnas.Rows[indice];
+            nomUsuario = usuarioSerleccionado[0].ToString();
+            return nomUsuario;
+
+        }
         public DataTable VerAlumnaSeleccionada(string condicion)
         {
             command = new SqlCommand();
@@ -85,6 +94,16 @@ namespace RegistroAlumnasInframor.Models.Dao
             command.ExecuteNonQuery();
             conexion.Close();
         }
-        public void Delete() { }
+        public void EliminarAlumna(string pNomUsuario)
+        {
+            command = new SqlCommand();
+            command.Connection = conexion;
+            command.CommandText = "SP_EliminarAlumna";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@NomUsuario", pNomUsuario);
+            conexion.Open();
+            command.ExecuteNonQuery();
+            conexion.Close();
+        }
     }
 }
