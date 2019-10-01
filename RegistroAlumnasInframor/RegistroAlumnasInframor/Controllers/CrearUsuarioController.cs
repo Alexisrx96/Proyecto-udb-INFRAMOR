@@ -80,7 +80,18 @@ namespace RegistroAlumnasInframor.Controllers
         }
         private void Cancelar(object sender, EventArgs e)
         {
-            vista.Close();
+            UsuarioDao usuarios = new UsuarioDao();
+            if (usuarios.HayUsuarios())
+            {
+                UsuarioView usuario = new UsuarioView();
+                vista.Hide();
+                usuario.ShowDialog();
+                vista.Close();
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
         private void UsuarioInsert(object sender, EventArgs e)
         {

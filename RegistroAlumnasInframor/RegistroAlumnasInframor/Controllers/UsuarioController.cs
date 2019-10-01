@@ -19,7 +19,7 @@ namespace RegistroAlumnasInframor.Controllers
             vista = view;
             //Inicializar eventos
             vista.Load += new EventHandler(UsuarioList);
-            vista.btn_buscar.Click += new EventHandler(CrearUsuario);
+            vista.btn_CrearUsuario.Click += new EventHandler(CrearUsuario);
             vista.txt_buscar.TextChanged += new EventHandler(UsuarioList);
             vista.dgv_tablaUsuarios.DoubleClick += new EventHandler(EditarUsuario);
             vista.txt_buscar.KeyPress += new KeyPressEventHandler(BuscarKeyPress);
@@ -33,21 +33,19 @@ namespace RegistroAlumnasInframor.Controllers
             vista.Close();
         }
 
-        private void Cancelar(object sender, EventArgs e)
-        {
-            vista.Close();
-        }
 
         private void UsuarioList(object sender, EventArgs e)
         {
-            UsuarioDao db = new UsuarioDao();
+            UsuarioDao usuarios = new UsuarioDao();
             vista.dgv_tablaUsuarios.DataSource =
-                db.VerUsuarios(vista.txt_buscar.Text);
+                usuarios.VerUsuarios(vista.txt_buscar.Text);
         }
         private void CrearUsuario(object sender, EventArgs e)
         {
             CrearUsuarioView crear = new CrearUsuarioView();
+            vista.Hide();
             crear.ShowDialog();
+            vista.Close();
 
         }
         private void EditarUsuario(object sender, EventArgs e)
@@ -57,7 +55,9 @@ namespace RegistroAlumnasInframor.Controllers
             UsuarioDao usuario = new UsuarioDao();
             string usuarioSeleccionado = usuario.UsuarioSeleccionado(indice,vista.txt_buscar.Text);
             ModificarUsuarioView modificarUsuario = new ModificarUsuarioView(usuarioSeleccionado);
+            vista.Hide();
             modificarUsuario.ShowDialog();
+            vista.Close();
 
         }
         protected void BuscarKeyPress(object sender, KeyPressEventArgs e)

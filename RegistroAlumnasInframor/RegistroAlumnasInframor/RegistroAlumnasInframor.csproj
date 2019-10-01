@@ -53,6 +53,7 @@
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ModificarUsuarioController.cs" />
     <Compile Include="Controllers\NuevaAlumnaController.cs" />
+    <Compile Include="Controllers\AlumnaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Models\Dao\AlumnaDao.cs" />
     <Compile Include="Models\Dao\DbContext.cs" />
@@ -113,6 +114,12 @@
     <Compile Include="Views\NuevaAlumnaView.Designer.cs">
       <DependentUpon>NuevaAlumnaView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AlumnaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AlumnaView.Designer.cs">
+      <DependentUpon>AlumnaView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NuevaAlumnaView.resx">
       <DependentUpon>NuevaAlumnaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AlumnaView.resx">
+      <DependentUpon>AlumnaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UsuarioView.resx">
       <DependentUpon>UsuarioView.cs</DependentUpon>

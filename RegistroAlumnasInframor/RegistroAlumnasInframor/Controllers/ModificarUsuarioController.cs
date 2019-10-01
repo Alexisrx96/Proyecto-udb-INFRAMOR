@@ -51,8 +51,10 @@ namespace RegistroAlumnasInframor.Controllers
                 try
                 {
                     usuarioDao.EliminarUsuario(usuarioSeleccionado);
-                    vista.Close();
                     MessageBox.Show("Se elimió el usuario con éxito");
+                    UsuarioView usuario = new UsuarioView();
+                    vista.Hide();
+                    usuario.ShowDialog();
                     vista.Close();
                 }
                 catch (Exception ex)
@@ -86,8 +88,10 @@ namespace RegistroAlumnasInframor.Controllers
                         vista.txt_nomUsuario.Text,
                         estado,
                         usuarioSeleccionado);
-                        vista.Close();
                         MessageBox.Show("Se Modificó el usuario con éxito");
+                        UsuarioView usuario = new UsuarioView();
+                        vista.Hide();
+                        usuario.ShowDialog();
                         vista.Close();
                     }
                     catch (Exception ex)
@@ -128,6 +132,9 @@ namespace RegistroAlumnasInframor.Controllers
         }
         private void Cancelar(object sender, EventArgs e)
         {
+            UsuarioView usuario = new UsuarioView();
+            vista.Hide();
+            usuario.ShowDialog();
             vista.Close();
         }
         private void UsuarioInsert(object sender, EventArgs e)

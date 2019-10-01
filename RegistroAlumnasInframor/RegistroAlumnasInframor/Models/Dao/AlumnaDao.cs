@@ -11,37 +11,19 @@ namespace RegistroAlumnasInframor.Models.Dao
 {
     class AlumnaDao:DbContext
     {
-        public List<Alumna> VerRegistros(string condicion)
+        DataTable alumnas = new DataTable();
+        public DataTable VerAlumnas(string condicion)
         {
             command = new SqlCommand();
             command.Connection = this.AbrirConexion();
-            command.CommandText = "ProcedimientoAlmacenado";
+            command.CommandText = "SP_BuscarAlumnos";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@condicion",condicion);
-
-            conexion.Open();
-
+            command.Parameters.AddWithValue("@condicion", condicion);
             leerFilas = command.ExecuteReader();
-            List<Alumna> listaAlumnas = new List<Alumna>();
-            while (leerFilas.Read())
-            {
-                listaAlumnas.Add
-                    (new Alumna{
-                    IdAlumna = leerFilas.GetString(0),
-                    Nombre = leerFilas.GetString(1),
-                    Apellido = leerFilas.GetString(2),
-                    NIE = leerFilas.GetInt32(3),
-                    AnioIngreso = leerFilas.GetInt32(4),
-                    AnioEgreso = leerFilas.GetInt32(5),
-                    FechaNacimiento = leerFilas.GetDateTime(6),
-                    IdDepartamnto = leerFilas.GetString(7),
-                    NombrePadre = leerFilas.GetString(8),
-                    NombreMadre = leerFilas.GetString(9)
-                    });
-            }
+            alumnas.Load(leerFilas);
             leerFilas.Close();
-            conexion.Close();
-            return listaAlumnas;
+            this.CerrarConexion();
+            return alumnas;
         }
         public void Insert() { }
         public void Edit() { }

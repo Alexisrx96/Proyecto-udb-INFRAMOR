@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dgv_tablaUsuarios = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
-            this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_CrearUsuario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btn_regresar = new System.Windows.Forms.Button();
@@ -66,12 +66,12 @@
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(438, 68);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(158, 29);
-            this.btn_buscar.TabIndex = 2;
-            this.btn_buscar.Text = "Crear Nuevo Usuario";
-            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_CrearUsuario.Location = new System.Drawing.Point(438, 68);
+            this.btn_CrearUsuario.Name = "btn_buscar";
+            this.btn_CrearUsuario.Size = new System.Drawing.Size(158, 29);
+            this.btn_CrearUsuario.TabIndex = 2;
+            this.btn_CrearUsuario.Text = "Crear Nuevo Usuario";
+            this.btn_CrearUsuario.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -103,7 +103,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_buscar);
+            this.Controls.Add(this.btn_CrearUsuario);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dgv_tablaUsuarios);
             this.Name = "UsuarioView";
@@ -120,7 +120,7 @@
 
         public System.Windows.Forms.DataGridView dgv_tablaUsuarios;
         public System.Windows.Forms.TextBox txt_buscar;
-        public System.Windows.Forms.Button btn_buscar;
+        public System.Windows.Forms.Button btn_CrearUsuario;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ErrorProvider errorProvider1;
         public System.Windows.Forms.Button btn_regresar;
