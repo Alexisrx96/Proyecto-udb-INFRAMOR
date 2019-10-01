@@ -64,10 +64,10 @@
             this.txt_buscar.Size = new System.Drawing.Size(327, 22);
             this.txt_buscar.TabIndex = 1;
             // 
-            // btn_buscar
+            // btn_NuevaAlumna
             // 
             this.btn_NuevaAlumna.Location = new System.Drawing.Point(438, 68);
-            this.btn_NuevaAlumna.Name = "btn_buscar";
+            this.btn_NuevaAlumna.Name = "btn_NuevaAlumna";
             this.btn_NuevaAlumna.Size = new System.Drawing.Size(158, 29);
             this.btn_NuevaAlumna.TabIndex = 2;
             this.btn_NuevaAlumna.Text = "Crear Nueva Alumna";
@@ -108,7 +108,7 @@
             this.Controls.Add(this.dgv_tablaAlumnas);
             this.Name = "AlumnaView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UsuarioView";
+            this.Text = "AlumnaView";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tablaAlumnas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

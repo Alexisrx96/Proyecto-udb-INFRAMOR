@@ -109,7 +109,7 @@ namespace RegistroAlumnasInframor.Models.Dao
             return nomUsuario;
             
         }
-        public void EditarUsuario(string pNombre,string pApellido, string pNomUsuario,int pEstado,string pcCondicion)
+        public void EditarUsuario(string pNombre,string pApellido, string pNomUsuario,int pEstado,string pCondicion)
         {
             command = new SqlCommand();
             command.Connection = conexion;
@@ -119,7 +119,7 @@ namespace RegistroAlumnasInframor.Models.Dao
             command.Parameters.AddWithValue("@ApellidosUsuario", pApellido);
             command.Parameters.AddWithValue("@NomUsuario", pNomUsuario);
             command.Parameters.AddWithValue("@Estado", pEstado);
-            command.Parameters.AddWithValue("@Condicion", pcCondicion);
+            command.Parameters.AddWithValue("@Condicion", pCondicion);
             conexion.Open();
             command.ExecuteNonQuery();
             conexion.Close();

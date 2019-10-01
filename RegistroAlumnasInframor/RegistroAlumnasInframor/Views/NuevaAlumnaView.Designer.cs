@@ -148,6 +148,7 @@
             // txt_idAlumna
             // 
             this.txt_idAlumna.Location = new System.Drawing.Point(224, 24);
+            this.txt_idAlumna.MaxLength = 8;
             this.txt_idAlumna.Name = "txt_idAlumna";
             this.txt_idAlumna.Size = new System.Drawing.Size(100, 22);
             this.txt_idAlumna.TabIndex = 1;
@@ -155,6 +156,7 @@
             // txt_nie
             // 
             this.txt_nie.Location = new System.Drawing.Point(224, 64);
+            this.txt_nie.MaxLength = 6;
             this.txt_nie.Name = "txt_nie";
             this.txt_nie.Size = new System.Drawing.Size(100, 22);
             this.txt_nie.TabIndex = 2;
@@ -162,6 +164,7 @@
             // txt_nombres
             // 
             this.txt_nombres.Location = new System.Drawing.Point(224, 102);
+            this.txt_nombres.MaxLength = 25;
             this.txt_nombres.Name = "txt_nombres";
             this.txt_nombres.Size = new System.Drawing.Size(100, 22);
             this.txt_nombres.TabIndex = 3;
@@ -169,6 +172,7 @@
             // txt_apelidos
             // 
             this.txt_apelidos.Location = new System.Drawing.Point(224, 132);
+            this.txt_apelidos.MaxLength = 25;
             this.txt_apelidos.Name = "txt_apelidos";
             this.txt_apelidos.Size = new System.Drawing.Size(100, 22);
             this.txt_apelidos.TabIndex = 4;
@@ -176,6 +180,7 @@
             // txt_anioIngreso
             // 
             this.txt_anioIngreso.Location = new System.Drawing.Point(224, 161);
+            this.txt_anioIngreso.MaxLength = 4;
             this.txt_anioIngreso.Name = "txt_anioIngreso";
             this.txt_anioIngreso.Size = new System.Drawing.Size(100, 22);
             this.txt_anioIngreso.TabIndex = 5;
@@ -183,6 +188,7 @@
             // txt_anioEgreso
             // 
             this.txt_anioEgreso.Location = new System.Drawing.Point(224, 201);
+            this.txt_anioEgreso.MaxLength = 4;
             this.txt_anioEgreso.Name = "txt_anioEgreso";
             this.txt_anioEgreso.Size = new System.Drawing.Size(100, 22);
             this.txt_anioEgreso.TabIndex = 6;

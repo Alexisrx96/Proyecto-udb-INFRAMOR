@@ -18,9 +18,9 @@ namespace RegistroAlumnasInframor.Controllers
         {
             vista = view;
             //Inicializar eventos
-            vista.Load += new EventHandler(UsuarioList);
-            vista.btn_NuevaAlumna.Click += new EventHandler(CrearUsuario);
-            vista.txt_buscar.TextChanged += new EventHandler(UsuarioList);
+            vista.Load += new EventHandler(AlumnaList);
+            vista.btn_NuevaAlumna.Click += new EventHandler(NuevaAlumna);
+            vista.txt_buscar.TextChanged += new EventHandler(AlumnaList);
             vista.dgv_tablaAlumnas.DoubleClick += new EventHandler(EditarUsuario);
             vista.txt_buscar.KeyPress += new KeyPressEventHandler(BuscarKeyPress);
             vista.btn_regresar.Click += new EventHandler(Regresar);
@@ -32,22 +32,18 @@ namespace RegistroAlumnasInframor.Controllers
             menu.ShowDialog();
             vista.Close();
         }
-
-        private void Cancelar(object sender, EventArgs e)
+        private void AlumnaList(object sender, EventArgs e)
         {
-            vista.Close();
-        }
-
-        private void UsuarioList(object sender, EventArgs e)
-        {
-            UsuarioDao db = new UsuarioDao();
+            AlumnaDao db = new AlumnaDao();
             vista.dgv_tablaAlumnas.DataSource =
-                db.VerUsuarios(vista.txt_buscar.Text);
+                db.VerAlumnas(vista.txt_buscar.Text);
         }
-        private void CrearUsuario(object sender, EventArgs e)
+        private void NuevaAlumna(object sender, EventArgs e)
         {
-            CrearUsuarioView crear = new CrearUsuarioView();
+            NuevaAlumnaView crear = new NuevaAlumnaView();
+            vista.Hide();
             crear.ShowDialog();
+            vista.Close();
 
         }
         private void EditarUsuario(object sender, EventArgs e)
