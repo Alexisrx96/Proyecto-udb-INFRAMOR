@@ -53,7 +53,7 @@ namespace RegistroAlumnasInframor.Controllers
             int indice = vista.dgv_tablaUsuarios.Rows.IndexOf(selected);
             UsuarioDao usuario = new UsuarioDao();
             string usuarioSeleccionado = usuario.UsuarioSeleccionado(indice,vista.txt_buscar.Text);
-            ModificarAlumnaView modificarUsuario = new ModificarAlumnaView(usuarioSeleccionado);
+            ModificarUsuarioView modificarUsuario = new ModificarUsuarioView(usuarioSeleccionado);
             vista.Hide();
             modificarUsuario.ShowDialog();
             vista.Close();

@@ -33,6 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -188,9 +190,48 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\aaa.jpg" />
+    <Content Include="Resources\ADMIN.jpg" />
+    <Content Include="Resources\ADMINISTRADOR.jpg" />
+    <Content Include="Resources\ADMINUSUARIO.png" />
+    <Content Include="Resources\alumna.png" />
+    <Content Include="Resources\candado.png" />
+    <Content Include="Resources\candado2.png" />
+    <Content Include="Resources\candado3.png" />
+    <Content Include="Resources\CLOSE.jpg" />
+    <Content Include="Resources\CLOSE.png" />
+    <Content Include="Resources\CLOSE1.jpg" />
+    <Content Include="Resources\CLOSEE.jpg" />
+    <Content Include="Resources\CLOSEEE.jpg" />
+    <Content Include="Resources\CLOSEVERDAD.png" />
+    <Content Include="Resources\CREDITOS.png" />
+    <Content Include="Resources\CREDITS.jpg" />
     <Content Include="Resources\círculo-300x300.png" />
     <Content Include="Resources\escudo.jpg" />
+    <Content Include="Resources\fondo layout.jpg" />
+    <Content Include="Resources\FONDO1 - Copy.jpg" />
     <Content Include="Resources\FONDO1.jpg" />
+    <Content Include="Resources\fondodefini.jpg" />
+    <Content Include="Resources\fondoiniivio.jpg" />
+    <Content Include="Resources\fondoiniivio1.jpg" />
+    <Content Include="Resources\infra.jpg" />
+    <Content Include="Resources\infra2.jpg" />
+    <Content Include="Resources\log in.jpg" />
+    <Content Include="Resources\log in2.jpg" />
+    <Content Include="Resources\LOG OUT.jpg" />
+    <Content Include="Resources\LUPA.jpg" />
+    <Content Include="Resources\MAXIMI.png" />
+    <Content Include="Resources\MAXIMIZAR.jpg" />
+    <Content Include="Resources\MINI.jpg" />
+    <Content Include="Resources\MINI1.jpg" />
+    <Content Include="Resources\MINIVERDAD.png" />
+    <Content Include="Resources\perfil-azul.png" />
+    <Content Include="Resources\regreso.png" />
+    <Content Include="Resources\sign in.jpg" />
+    <Content Include="Resources\sign in2.jpg" />
+    <Content Include="Resources\signin.jpg" />
+    <Content Include="Resources\udb_logo.png" />
+    <Content Include="Resources\Untitled.png" />
+    <Content Include="Resources\VENTANAS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

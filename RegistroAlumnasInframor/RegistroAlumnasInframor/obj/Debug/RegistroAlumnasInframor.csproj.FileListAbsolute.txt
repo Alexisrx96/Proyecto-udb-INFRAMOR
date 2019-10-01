@@ -26,6 +26,10 @@ D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInfr
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csproj.CoreCompileInputs.cache
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.exe
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.pdb
-D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csprojAssemblyReference.cache
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.AlumnaView.resources
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.Views.ModificarAlumnaView.resources
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Design.resources.dll
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csproj.CopyComplete

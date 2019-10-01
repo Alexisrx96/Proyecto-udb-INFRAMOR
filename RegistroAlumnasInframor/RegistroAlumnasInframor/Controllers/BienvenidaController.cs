@@ -20,15 +20,22 @@ namespace RegistroAlumnasInframor.Controllers
         {
             vista = view;
             vista.timerCerrar.Tick += new EventHandler(Cerrar);
-            vista.timerCarga.Tick += new System.EventHandler(BarraDeCarga);
-            vista.timerTab.Tick += new System.EventHandler(CambiarTab);
-            vista.Load += new System.EventHandler(Inicio);
+            vista.timerCarga.Tick += new EventHandler(BarraDeCarga);
+            vista.timerTab.Tick += new EventHandler(CambiarTab);
+            vista.Load += new EventHandler(Inicio);
+            vista.pxclose.Click += new EventHandler(CerrarVentana);
+            vista.pxminimizar.Click += new EventHandler(Ventana);
+            vista.pxventana.Click += new EventHandler(Minimizar);
+
         }
         private void Inicio (object sender, EventArgs e)
         {
             vista.timerCerrar.Interval = 5000;
+            vista.timerTab.Interval = 2500;
             vista.timerCerrar.Start();
             vista.timerCarga.Start();
+            vista.timerTab.Start();
+            vista.tabControl1.SelectTab(tab);
             pict = new PictureBox[5] { vista.P1, vista.P2, vista.P3, vista.P4, vista.P5 };
         }
         private void BarraDeCarga(object sender, EventArgs e)
@@ -68,6 +75,25 @@ namespace RegistroAlumnasInframor.Controllers
                 crearUsuario.ShowDialog();
                 vista.Close();
             }
+        }
+        private void Ventana(object sender, EventArgs e)
+        {
+            if (vista.WindowState == FormWindowState.Maximized)
+            {
+                vista.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                vista.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void CerrarVentana(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void Minimizar(object sender, EventArgs e)
+        {
+            vista.WindowState = FormWindowState.Minimized;
         }
     }
 }

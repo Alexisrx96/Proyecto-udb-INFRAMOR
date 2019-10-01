@@ -14,15 +14,21 @@ namespace RegistroAlumnasInframor.Controllers
         public CreditosController(CreditosView view)
         {
             vista = view;
-            vista.btnCerrarCred.Click += new EventHandler(Cerrar);
-            vista.btnMaxCred.Click += new EventHandler(Maximizar);
-            vista.btnMinCred.Click += new EventHandler(Minimizar);
+            vista.pxclose.Click += new EventHandler(Cerrar);
+            vista.pxventanas.Click += new EventHandler(Ventana);
+            vista.pxminimizar.Click += new EventHandler(Minimizar);
             vista.btn_regresar.Click += new EventHandler(Regresar);
         }
-        private void Maximizar(object sender, EventArgs e)
+        private void Ventana(object sender, EventArgs e)
         {
-            vista.WindowState = FormWindowState.Maximized;
-            vista.btnMaxCred.Visible = false;
+            if (vista.WindowState == FormWindowState.Maximized)
+            {
+                vista.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                vista.WindowState = FormWindowState.Normal;
+            }
         }
         private void Cerrar(object sender, EventArgs e)
         {
