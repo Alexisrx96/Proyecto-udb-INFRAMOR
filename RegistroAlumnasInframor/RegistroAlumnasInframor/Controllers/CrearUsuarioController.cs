@@ -78,14 +78,13 @@ namespace RegistroAlumnasInframor.Controllers
             }
             return validado;
         }
+
         private void Cancelar(object sender, EventArgs e)
         {
             UsuarioDao usuarios = new UsuarioDao();
             if (usuarios.HayUsuarios())
             {
-                UsuarioView usuario = new UsuarioView();
-                vista.Hide();
-                usuario.ShowDialog();
+                CrearUsuarioView.SelfClosing = true;
                 vista.Close();
             }
             else
@@ -117,16 +116,16 @@ namespace RegistroAlumnasInframor.Controllers
                                     1);
                         //Si hay registros, simplemente cierra la ventana
                         MessageBox.Show("Se creó el usuario con éxito");
-                        if (hayUsuarios)
+                        if (!hayUsuarios)
                         {
+                            IniciarSesionView iniciarSesion = new IniciarSesionView();
+                            vista.Hide();
+                            iniciarSesion.ShowDialog();
                             vista.Close();
                         }
-                        //Si la base de datos está vacía antes de crear al primer usuario envía al menú de bienvenida
                         else
                         {
-                            BienvenidaView bienvenida = new BienvenidaView();
-                            vista.Hide();
-                            bienvenida.ShowDialog();
+                            CrearUsuarioView.SelfClosing = true;
                             vista.Close();
                         }
                     }

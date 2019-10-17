@@ -19,21 +19,34 @@ namespace RegistroAlumnasInframor.Controllers
             vista = view;
             //Inicializar eventos
             vista.Load += new EventHandler(UsuarioList);
-            vista.btn_CrearUsuario.Click += new EventHandler(CrearUsuario);
             vista.txt_buscar.TextChanged += new EventHandler(UsuarioList);
             vista.dgv_tablaUsuarios.DoubleClick += new EventHandler(EditarUsuario);
             vista.txt_buscar.KeyPress += new KeyPressEventHandler(BuscarKeyPress);
             vista.btn_regresar.Click += new EventHandler(Regresar);
         }
+        private void Ventana(object sender, EventArgs e)
+        {
+            if (vista.WindowState == FormWindowState.Normal)
+            {
+                vista.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                vista.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void CerrarVentana(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void Minimizar(object sender, EventArgs e)
+        {
+            vista.WindowState = FormWindowState.Minimized;
+        }
         private void Regresar(object sender, EventArgs e)
         {
-            MenuView menu = new MenuView();
-            vista.Hide();
-            menu.ShowDialog();
             vista.Close();
         }
-
-
         private void UsuarioList(object sender, EventArgs e)
         {
             UsuarioDao usuarios = new UsuarioDao();

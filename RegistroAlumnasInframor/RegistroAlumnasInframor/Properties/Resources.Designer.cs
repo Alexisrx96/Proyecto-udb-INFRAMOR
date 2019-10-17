@@ -243,6 +243,16 @@ namespace RegistroAlumnasInframor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap female_graduate_student {
+            get {
+                object obj = ResourceManager.GetObject("female-graduate-student", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_layout {
             get {
                 object obj = ResourceManager.GetObject("fondo_layout", resourceCulture);
@@ -356,6 +366,16 @@ namespace RegistroAlumnasInframor.Properties {
         internal static System.Drawing.Bitmap LUPA {
             get {
                 object obj = ResourceManager.GetObject("LUPA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnifier {
+            get {
+                object obj = ResourceManager.GetObject("magnifier", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

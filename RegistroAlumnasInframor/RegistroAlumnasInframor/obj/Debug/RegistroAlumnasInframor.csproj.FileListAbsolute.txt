@@ -33,3 +33,4 @@ D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInfr
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Design.resources.dll
 D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csproj.CopyComplete
+D:\Users\Irvin\source\repos\Alexisrx96\Proyecto-udb-INFRAMOR\RegistroAlumnasInframor\RegistroAlumnasInframor\obj\Debug\RegistroAlumnasInframor.csprojAssemblyReference.cache

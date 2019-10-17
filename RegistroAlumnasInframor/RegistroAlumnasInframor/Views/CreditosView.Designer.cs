@@ -68,7 +68,7 @@
             this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(17, 586);
             this.panel1.TabIndex = 0;
@@ -78,7 +78,7 @@
             this.panel2.BackColor = System.Drawing.Color.DarkBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(17, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(21, 586);
             this.panel2.TabIndex = 1;
@@ -89,7 +89,7 @@
             this.pictureBox1.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.udb_logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(107, 64);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(139, 145);
             this.pictureBox1.TabIndex = 3;
@@ -154,7 +154,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.Location = new System.Drawing.Point(643, 347);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -170,9 +170,9 @@
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.Color.DarkBlue;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(443, 137);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "PROGRAMADORES";
@@ -215,11 +215,11 @@
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.tabPage2.Location = new System.Drawing.Point(4, 55);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(443, 110);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(443, 137);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DISEÑADORES BASE DE DATOS";
             // 
@@ -261,7 +261,7 @@
             this.panel4.Controls.Add(this.pxventanas);
             this.panel4.Controls.Add(this.pxminimizar);
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1105, 27);
             this.panel4.TabIndex = 0;
@@ -271,7 +271,7 @@
             this.pxclose.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.CLOSEVERDAD;
             this.pxclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pxclose.Location = new System.Drawing.Point(1064, -2);
-            this.pxclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pxclose.Margin = new System.Windows.Forms.Padding(4);
             this.pxclose.Name = "pxclose";
             this.pxclose.Size = new System.Drawing.Size(29, 25);
             this.pxclose.TabIndex = 5;
@@ -283,7 +283,7 @@
             this.pxventanas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pxventanas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pxventanas.Location = new System.Drawing.Point(1027, -2);
-            this.pxventanas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pxventanas.Margin = new System.Windows.Forms.Padding(4);
             this.pxventanas.Name = "pxventanas";
             this.pxventanas.Size = new System.Drawing.Size(29, 24);
             this.pxventanas.TabIndex = 4;
@@ -295,7 +295,7 @@
             this.pxminimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pxminimizar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pxminimizar.Location = new System.Drawing.Point(989, -2);
-            this.pxminimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pxminimizar.Margin = new System.Windows.Forms.Padding(4);
             this.pxminimizar.Name = "pxminimizar";
             this.pxminimizar.Size = new System.Drawing.Size(29, 24);
             this.pxminimizar.TabIndex = 3;
@@ -359,7 +359,7 @@
             this.btn_regresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_regresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_regresar.Location = new System.Drawing.Point(87, 516);
-            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_regresar.Name = "btn_regresar";
             this.btn_regresar.Size = new System.Drawing.Size(59, 55);
             this.btn_regresar.TabIndex = 13;

@@ -29,26 +29,6 @@ namespace RegistroAlumnasInframor.Views
             Application.Exit();
                 
         }
-
-        private void Btn_Aceptar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IniciarSesionView_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_NomUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IniciarSesionView_Enter(object sender, EventArgs e)
-        {
-        }
-
         private void Txt_NomUsuario_Leave(object sender, EventArgs e)
         {
             if (txt_NomUsuario.Text == "") { 

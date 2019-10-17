@@ -50,23 +50,14 @@
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pxclose = new System.Windows.Forms.PictureBox();
-            this.pxventanas = new System.Windows.Forms.PictureBox();
-            this.pxminimizar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pxclose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxventanas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxminimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // errorProvider1
@@ -99,7 +90,7 @@
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Location = new System.Drawing.Point(0, 123);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -110,7 +101,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.lbl_nomUsuario);
             this.splitContainer1.Panel1.Controls.Add(this.lbl_Contrasenia);
             this.splitContainer1.Panel1.Controls.Add(this.lbl_confirmar);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -121,7 +111,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.txt_confirmar);
             this.splitContainer1.Panel2.Controls.Add(this.txt_contrasenia);
             this.splitContainer1.Panel2.Controls.Add(this.shapeContainer1);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(685, 315);
             this.splitContainer1.SplitterDistance = 313;
             this.splitContainer1.SplitterWidth = 5;
@@ -136,7 +125,6 @@
             this.lbl_nombre.Size = new System.Drawing.Size(101, 29);
             this.lbl_nombre.TabIndex = 1;
             this.lbl_nombre.Text = "Nombre";
-            this.lbl_nombre.Click += new System.EventHandler(this.Lbl_nombre_Click);
             // 
             // lbl_apellido
             // 
@@ -157,7 +145,6 @@
             this.lbl_nomUsuario.Size = new System.Drawing.Size(224, 29);
             this.lbl_nomUsuario.TabIndex = 3;
             this.lbl_nomUsuario.Text = "Nombre de Usuario";
-            this.lbl_nomUsuario.Click += new System.EventHandler(this.Lbl_nomUsuario_Click);
             // 
             // lbl_Contrasenia
             // 
@@ -211,7 +198,6 @@
             this.txt_nomUsuario.Name = "txt_nomUsuario";
             this.txt_nomUsuario.Size = new System.Drawing.Size(259, 15);
             this.txt_nomUsuario.TabIndex = 8;
-            this.txt_nomUsuario.TextChanged += new System.EventHandler(this.Txt_nomUsuario_TextChanged);
             // 
             // txt_confirmar
             // 
@@ -276,7 +262,6 @@
             this.lineShape3.X2 = 232;
             this.lineShape3.Y1 = 136;
             this.lineShape3.Y2 = 136;
-            this.lineShape3.Click += new System.EventHandler(this.LineShape3_Click);
             // 
             // lineShape2
             // 
@@ -301,22 +286,11 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 25);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "CREAR USUARIO";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Location = new System.Drawing.Point(0, 535);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(697, 21);
             this.panel1.TabIndex = 12;
@@ -325,66 +299,18 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkBlue;
             this.panel2.Location = new System.Drawing.Point(3, 523);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(695, 18);
             this.panel2.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.pxclose);
-            this.panel3.Controls.Add(this.pxventanas);
-            this.panel3.Controls.Add(this.pxminimizar);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(3, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(693, 31);
-            this.panel3.TabIndex = 14;
-            // 
-            // pxclose
-            // 
-            this.pxclose.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.CLOSEVERDAD;
-            this.pxclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pxclose.Location = new System.Drawing.Point(609, 0);
-            this.pxclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pxclose.Name = "pxclose";
-            this.pxclose.Size = new System.Drawing.Size(40, 28);
-            this.pxclose.TabIndex = 8;
-            this.pxclose.TabStop = false;
-            // 
-            // pxventanas
-            // 
-            this.pxventanas.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.VENTANAS;
-            this.pxventanas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pxventanas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pxventanas.Location = new System.Drawing.Point(557, 0);
-            this.pxventanas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pxventanas.Name = "pxventanas";
-            this.pxventanas.Size = new System.Drawing.Size(43, 32);
-            this.pxventanas.TabIndex = 7;
-            this.pxventanas.TabStop = false;
-            // 
-            // pxminimizar
-            // 
-            this.pxminimizar.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.MINIVERDAD;
-            this.pxminimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pxminimizar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pxminimizar.Location = new System.Drawing.Point(513, -2);
-            this.pxminimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pxminimizar.Name = "pxminimizar";
-            this.pxminimizar.Size = new System.Drawing.Size(35, 28);
-            this.pxminimizar.TabIndex = 6;
-            this.pxminimizar.TabStop = false;
             // 
             // CrearUsuarioView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RegistroAlumnasInframor.Properties.Resources.fondo_layout;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(657, 556);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_cancelar);
@@ -403,11 +329,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pxclose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxventanas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxminimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,7 +350,6 @@
         public System.Windows.Forms.TextBox txt_confirmar;
         public System.Windows.Forms.TextBox txt_contrasenia;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
@@ -438,9 +358,5 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.PictureBox pxminimizar;
-        public System.Windows.Forms.Panel panel3;
-        public System.Windows.Forms.PictureBox pxclose;
-        public System.Windows.Forms.PictureBox pxventanas;
     }
 }

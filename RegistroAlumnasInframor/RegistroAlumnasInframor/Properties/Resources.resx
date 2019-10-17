@@ -118,133 +118,139 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="aaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aaa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ADMIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDO1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ADMINISTRADOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ADMINISTRADOR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ADMINUSUARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ADMINUSUARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alumna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alumna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="candado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\candado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="candado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\candado3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CLOSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLOSE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CLOSE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLOSE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CLOSE11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLOSE1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CLOSEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLOSEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CLOSEEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLOSEEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CLOSEVERDAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CLOSEVERDAD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CREDITOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CREDITOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CREDITS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CREDITS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="círculo_300x300" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\círculo-300x300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="escudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escudo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FONDO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDO1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FONDO1___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDO1 - Copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondodefini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondodefini.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondoiniivio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoiniivio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondoiniivio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoiniivio1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo_layout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo layout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="infra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\infra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ADMINUSUARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADMINUSUARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="infra2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\infra2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="log_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log in.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="log_in2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log in2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LOG_OUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOG OUT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LUPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LUPA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MAXIMI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MAXIMI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MAXIMIZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MAXIMIZAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MINI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MINI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MINI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MINI1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MINIVERDAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MINIVERDAD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="perfil_azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CLOSEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="regreso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regreso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CREDITOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CREDITOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoiniivio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoiniivio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="signin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\signin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sign in.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondoiniivio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoiniivio1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADMIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log in.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sign_in2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sign in2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="udb_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\udb_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alumna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alumna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-graduate-student" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-graduate-student.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VENTANAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VENTANAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="escudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\escudo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAXIMIZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAXIMIZAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOG_OUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOG OUT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CREDITS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CREDITS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LUPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LUPA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil_azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aaa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="candado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VENTANAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VENTANAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sign in.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FONDO1___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDO1 - Copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSEEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSEEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondodefini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondodefini.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MINI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MINI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log_in2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log in2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="círculo_300x300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\círculo-300x300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="udb_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\udb_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MINIVERDAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MINIVERDAD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAXIMI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAXIMI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSE11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSE1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_layout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo layout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MINI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MINI1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="candado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candado3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="infra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

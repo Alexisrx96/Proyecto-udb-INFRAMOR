@@ -48,7 +48,7 @@ namespace RegistroAlumnasInframor.Controllers
             }
             else
             {
-                vista.timerCarga.Enabled = false;
+                vista.timerCarga.Stop();
             }
         }
         private void CambiarTab(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace RegistroAlumnasInframor.Controllers
         }
         private void Ventana(object sender, EventArgs e)
         {
-            if (vista.WindowState == FormWindowState.Maximized)
+            if (vista.WindowState == FormWindowState.Normal)
             {
                 vista.WindowState = FormWindowState.Maximized;
             }

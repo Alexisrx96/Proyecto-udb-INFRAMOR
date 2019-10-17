@@ -19,6 +19,19 @@ namespace RegistroAlumnasInframor.Controllers
             vista.btn_Aceptar.Click += new EventHandler(Login);
             vista.txt_NomUsuario.KeyPress += new KeyPressEventHandler(UsuarioKeyPress);
         }
+        private bool CamposVacios2()
+        {
+            bool validado=true;
+            foreach (Control item in vista.Controls)
+            {
+                if(item is TextBox&&string.IsNullOrWhiteSpace(item.Text))
+                {
+                    validado = false;
+                    vista.errorProvider1.SetError(item, "El campo no puede estar vacío");
+                }
+            }
+            return validado;
+        }
         private bool CamposVacios()
         {
             bool validado = true;

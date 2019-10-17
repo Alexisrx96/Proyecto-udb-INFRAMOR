@@ -60,7 +60,6 @@
             this.txt_NomUsuario.TabIndex = 2;
             this.txt_NomUsuario.Text = "USUARIO";
             this.txt_NomUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_NomUsuario.TextChanged += new System.EventHandler(this.Txt_NomUsuario_TextChanged);
             this.txt_NomUsuario.Enter += new System.EventHandler(this.Txt_NomUsuario_Enter);
             this.txt_NomUsuario.Leave += new System.EventHandler(this.Txt_NomUsuario_Leave);
             // 
@@ -94,7 +93,6 @@
             this.btn_Aceptar.Size = new System.Drawing.Size(175, 48);
             this.btn_Aceptar.TabIndex = 4;
             this.btn_Aceptar.UseVisualStyleBackColor = true;
-            this.btn_Aceptar.Click += new System.EventHandler(this.Btn_Aceptar_Click);
             // 
             // btn_Cerrar
             // 
@@ -111,13 +109,14 @@
             // 
             // errorProvider1
             // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider1.ContainerControl = this;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Location = new System.Drawing.Point(0, 351);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 16);
             this.panel1.TabIndex = 6;
@@ -126,7 +125,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gold;
             this.panel2.Location = new System.Drawing.Point(1, 351);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(655, 37);
             this.panel2.TabIndex = 7;
@@ -140,7 +139,7 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Location = new System.Drawing.Point(107, 46);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(69, 66);
             this.pictureBox3.TabIndex = 9;
@@ -152,7 +151,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(107, 156);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(69, 66);
             this.pictureBox1.TabIndex = 10;
@@ -213,8 +212,6 @@
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IniciarSesionView";
-            this.Load += new System.EventHandler(this.IniciarSesionView_Load);
-            this.Enter += new System.EventHandler(this.IniciarSesionView_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

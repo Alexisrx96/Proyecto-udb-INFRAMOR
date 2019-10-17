@@ -207,6 +207,7 @@
     <Content Include="Resources\CREDITS.jpg" />
     <Content Include="Resources\círculo-300x300.png" />
     <Content Include="Resources\escudo.jpg" />
+    <None Include="Resources\female-graduate-student.png" />
     <Content Include="Resources\fondo layout.jpg" />
     <Content Include="Resources\FONDO1 - Copy.jpg" />
     <Content Include="Resources\FONDO1.jpg" />
@@ -219,6 +220,7 @@
     <Content Include="Resources\log in2.jpg" />
     <Content Include="Resources\LOG OUT.jpg" />
     <Content Include="Resources\LUPA.jpg" />
+    <None Include="Resources\magnifier.bmp" />
     <Content Include="Resources\MAXIMI.png" />
     <Content Include="Resources\MAXIMIZAR.jpg" />
     <Content Include="Resources\MINI.jpg" />

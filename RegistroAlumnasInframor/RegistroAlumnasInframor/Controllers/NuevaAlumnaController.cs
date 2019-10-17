@@ -27,9 +27,26 @@ namespace RegistroAlumnasInframor.Controllers
             vista.txt_nombrePadre.KeyPress += new KeyPressEventHandler(NombrePadreKeyPress);
             vista.txt_nombreMadre.KeyPress += new KeyPressEventHandler(NombreMadreKeyPress);
         }
+        private bool CamposVacios2()
+        {
+            bool validado = true;
+            foreach (Control item in vista.Controls)
+            {
+                if (item is TextBox && string.IsNullOrWhiteSpace(item.Text))
+                {
+                    validado = false;
+                    vista.errorProvider1.SetError(item, "El campo no puede estar vacío");
+                }
+                if (validado)
+                {
+                    vista.errorProvider1.SetError(item, "");
+                }
+            }
+            return validado;
+        }
         private void Registrar(object sender, EventArgs e)
         {
-            if (CamposVacios())
+            if (CamposVacios2())
             {
                 if (MessageBox.Show("Se registrará a la alumna: " + vista.txt_idAlumna.Text + "\n¿Desea continuar?",
                                        "Crear usuario",
@@ -209,6 +226,11 @@ namespace RegistroAlumnasInframor.Controllers
                 e.Handled = false;
                 validado = true;
             }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }
             else
             {
                 e.Handled = true;
@@ -302,6 +324,11 @@ namespace RegistroAlumnasInframor.Controllers
                 e.Handled = false;
                 validado = true;
             }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }
             else
             {
                 e.Handled = true;
@@ -321,6 +348,11 @@ namespace RegistroAlumnasInframor.Controllers
             bool validado;
             //condicion para solo números
             if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+                validado = true;
+            }
+            else if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
                 validado = true;
